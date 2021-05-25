@@ -1,7 +1,10 @@
 .btn {
-    
+    padding: 12px 0;
+    border-radius: 9px;
+    border: 1px solid transparent;
     transition: 0.5s;
     cursor: pointer;
+    text-align: center;
     span {
         &:first-child {
             
@@ -11,7 +14,8 @@
         }
     }
     &-primary {
-        
+        background-color: $mainColor;
+        color: $white;
         &:hover {
             
         }
@@ -23,9 +27,19 @@
         }
     }
     &-contour{
-       
+        background-color: transparent;
+        border-color: $mainColor;
+        color: $mainColor;
         &:hover{
             
         }
+    }
+    &-filter{
+        display: flex;
+        padding: 0 14px;
+        align-items: center;
+        justify-content: space-between;
+        background: $textColor;
+        color: $white;
     }
 }

@@ -9,7 +9,6 @@
   "author": "Reinmand",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^5.0.0",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -18,9 +17,6 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify-es": "^2.0.0",
-    "jquery": "^3.5.1",
-    "maskedinput": "^3.3.11",
-    "masonry-layout": "^4.2.2",
-    "slick-carousel": "^1.8.1"
+    "jquery": "^3.5.1"
   }
 }

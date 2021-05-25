@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?s3j84s');
-  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?s3j84s#iefix') format('embedded-opentype'),
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?s3j84s') format('truetype'),
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?s3j84s') format('woff'),
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?s3j84s##{$icomoon-font-family}') format('svg');
+  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tcpn68');
+  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tcpn68#iefix') format('embedded-opentype'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?tcpn68') format('truetype'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?tcpn68') format('woff'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?tcpn68##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,34 +27,57 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-nice {
+.icon-burger-second .path1 {
   &:before {
-    content: $icon-nice; 
+    content: $icon-burger-second-path1;  
+    color: rgb(39, 39, 39);
   }
 }
-.icon-no {
+.icon-burger-second .path2 {
   &:before {
-    content: $icon-no; 
+    content: $icon-burger-second-path2;  
+    margin-left: -1.23828125em;  
+    color: rgb(196, 178, 138);
   }
 }
-.icon-normal {
+.icon-close {
   &:before {
-    content: $icon-normal; 
+    content: $icon-close; 
   }
 }
-.icon-profile {
+.icon-burger {
   &:before {
-    content: $icon-profile; 
+    content: $icon-burger; 
   }
 }
-.icon-telegtam {
+.icon-chek {
   &:before {
-    content: $icon-telegtam; 
+    content: $icon-chek; 
   }
 }
-.icon-triangle-down {
+.icon-photo {
   &:before {
-    content: $icon-triangle-down; 
+    content: $icon-photo; 
+  }
+}
+.icon-message {
+  &:before {
+    content: $icon-message; 
+  }
+}
+.icon-star-full {
+  &:before {
+    content: $icon-star-full; 
+  }
+}
+.icon-star {
+  &:before {
+    content: $icon-star; 
+  }
+}
+.icon-telegram {
+  &:before {
+    content: $icon-telegram; 
   }
 }
 .icon-video {
@@ -67,24 +90,19 @@
     content: $icon-whatsapp; 
   }
 }
-.icon-apartments {
-  &:before {
-    content: $icon-apartments; 
-  }
-}
 .icon-car {
   &:before {
     content: $icon-car; 
   }
 }
-.icon-clouse {
+.icon-house {
   &:before {
-    content: $icon-clouse; 
+    content: $icon-house; 
   }
 }
-.icon-geo {
+.icon-profile {
   &:before {
-    content: $icon-geo; 
+    content: $icon-profile; 
   }
 }
 .icon-heart {
@@ -92,9 +110,24 @@
     content: $icon-heart; 
   }
 }
+.icon-normal {
+  &:before {
+    content: $icon-normal; 
+  }
+}
+.icon-nice {
+  &:before {
+    content: $icon-nice; 
+  }
+}
 .icon-money {
   &:before {
     content: $icon-money; 
+  }
+}
+.icon-triangle-down {
+  &:before {
+    content: $icon-triangle-down; 
   }
 }
 
