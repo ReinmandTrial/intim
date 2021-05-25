@@ -1,0 +1,31 @@
+.btn {
+    
+    transition: 0.5s;
+    cursor: pointer;
+    span {
+        &:first-child {
+            
+        }
+        &:not(:first-child) {
+            
+        }
+    }
+    &-primary {
+        
+        &:hover {
+            
+        }
+    }
+    &-secondary{
+        
+        &:hover{
+            
+        }
+    }
+    &-contour{
+       
+        &:hover{
+            
+        }
+    }
+}

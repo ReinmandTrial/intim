@@ -1,0 +1,89 @@
+// MAX-WIDTH 1600PX breakpoints START
+@media (max-width: 1600px) {
+    
+}
+
+// MAX-WIDTH 1600PX breakpoints END
+
+// MAX-WIDTH 1399.98PX breakpoints START
+@media (max-width: 1399.98px) {
+    
+}
+// MAX-WIDTH 1399.98PX breakpoints END
+
+// MAX-WIDTH 1199.98PX breakpoints START
+@media (max-width: 1199.98px) {
+    
+} 
+// MAX-WIDTH 1199.98PX breakpoints END
+
+// media 1142px all fonts
+@media (max-width: 1142px) {
+    html,
+    body {
+        font-size: calc(12px + (17 - 12) * ((100vw - 360px) / (1142 - 360)));;
+        line-height: calc(20px + (28 - 20) * ((100vw - 360px) / (1142 - 360)));;
+    }
+    .h1 {
+        font-size: calc(28px + (64 - 28) * ((100vw - 360px) / (1142 - 360)));
+        line-height: calc(32px + (76 - 32) * ((100vw - 360px) / (1142 - 360)));
+    }
+    .h2 {
+        font-size: calc(28px + (48 - 28) * ((100vw - 360px) / (1142 - 360)));
+        line-height: calc(32px + (56 - 32) * ((100vw - 360px) / (1142 - 360)));
+    }
+    .h3 {
+        font-size: calc(20px + (30 - 20) * ((100vw - 360px) / (1142 - 360)));
+        line-height: calc(24px + (35 - 24) * ((100vw - 360px) / (1142 - 360)));
+    }
+    .h5 {
+        font-size: calc(14px + (20 - 14) * ((100vw - 360px) / (1142 - 360)));
+        line-height: calc(16px + (24 - 16) * ((100vw - 360px) / (1142 - 360)));
+    }
+    .h6 {
+        font-size: calc(12px + (17 - 12) * ((100vw - 360px) / (1142 - 360)));
+        line-height: calc(14px + (20 - 14) * ((100vw - 360px) / (1142 - 360)));
+    }
+    .subtitle { 
+        font-size: calc(18px + (26 - 18) * ((100vw - 360px) / (1142 - 360)));
+        line-height: calc(24px + (36 - 24) * ((100vw - 360px) / (1142 - 360)));
+    }
+    .text2 {
+        font-size: calc(12px + (16px - 12) * ((100vw - 360px) / (1142 - 360)));
+        line-height: calc(16px + (24 - 16) * ((100vw - 360px) / (1142 - 360)));
+    }
+    .table-text {
+        line-height: calc(18px + (24 - 18) * ((100vw - 360px) / (1142 - 360)));
+    }
+    .mini-text {
+        font-size: calc(10px + (14 - 10) * ((100vw - 360px) / (1142 - 360)));
+        line-height: calc(14px + (20 - 14) * ((100vw - 360px) / (1142 - 360)));
+    }
+    .calendar {
+        font-size: calc(11px + (14 - 11) * ((100vw - 360px) / (1142 - 360)));
+        line-height: calc(14px + (24 - 14) * ((100vw - 360px) / (1142 - 360)));
+    }
+    .btn {
+        font-size: calc(11px + (16 - 11) * ((100vw - 360px) / (1142 - 360)));
+        line-height: calc(16px + (24 - 16) * ((100vw - 360px) / (1142 - 360)));
+    }
+}
+// media 1142px all fonts
+
+// MAX-WIDTH 991.98PX breakpoints START
+@media (max-width: 991.98px) {
+    
+}
+// MAX-WIDTH 991.98PX breakpoints END
+
+// MAX-WIDTH 767.98PX breakpoints START
+@media (max-width: 767.98px) {
+    
+}
+// MAX-WIDTH 767.98PX breakpoints END
+
+// MAX-WIDTH 576.98PX breakpoints START 
+@media (max-width: 575.98px) {
+    
+}
+// MAX-WIDTH 576.98PX breakpoints END 
