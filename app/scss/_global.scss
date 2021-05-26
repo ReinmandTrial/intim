@@ -37,10 +37,14 @@ body {
 
 .select{
 	width: 100%;
+	color: $input;
+	position: relative;
 	.icon{
 		font-size: 10px;
+		color: $textColor;
 	}
 	&-header{
+		cursor: pointer;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -49,8 +53,62 @@ body {
 		height: 44px;
 		border-radius: 9px;
 		border: 1px solid $input;
+		&.open{
+			.icon{
+				transform: rotate(180deg);
+			}
+		}
 	}
 	&-body{
+		position: absolute;
+		top: calc(100% + 10px);
+		left: 0;
+		z-index: 2;
 		display: none;
+		width: 100%;
+		border-radius: 9px;
+		border: 1px solid $input;
+		overflow: hidden;
+		background: $white;
 	}
+	&-item{
+		cursor: pointer;
+		width: 100%;
+		padding: 12px 14px;
+		border-radius: 9px;
+		&:hover{
+			background: $mainColor;
+			color: $white;
+		}
+	}
+}
+
+.check{
+      display: flex;
+      align-items: center;
+      color: $textColor;
+		cursor: pointer;
+		width: fit-content;
+		&-Box{
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: 16px;
+			height: 16px;
+			border-radius: 3px;
+			background: $white;
+			border: 1px solid $input;
+			// padding-top: 2px;
+			.icon{
+				color: $white;
+				font-size: 8px;
+			}
+			&.active{
+				background: $mainColor;
+				border: none;
+			}
+		}
+		&-label{
+			margin-left: 6px;
+		}
 }
