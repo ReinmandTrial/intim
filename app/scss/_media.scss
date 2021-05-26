@@ -13,7 +13,9 @@
 
 // MAX-WIDTH 1199.98PX breakpoints START
 @media (max-width: 1199.98px) {
-    
+   .sidebar {
+      padding-right: 15px;
+   }   
 } 
 // MAX-WIDTH 1199.98PX breakpoints END
 
@@ -121,11 +123,14 @@
       height: calc(100vh - 74px);
       transition: all .5s;
       padding: 20px 16px;
+      overflow: auto;
       &.open{
          right: 0;
       }
       &__titleMobile{
          display: block;
+      }
+      &__title{
       }
       &__btn{
          display: block;
@@ -136,20 +141,127 @@
             &.active{
                background: $white;
             }
-         
          }
          .icon{
             transform: rotate(270deg);
          }
+         .btn-filter__title{
+            span{
+               &:not(:first-child){
+                  display: inline-block;
+               }
+            }
+         }
+      }
+      .btn-filter__back{
+         display: block;
       }
    }
-    
+   .mainBlock-filter__item{
+      box-shadow: unset;
+      border-radius: 0;
+      background: transparent;
+      padding: 0;
+      .mainBlock-table__row{
+         display: block;
+         padding-bottom: 0;
+         &::after{
+            display: none;
+         }
+         &:not(:first-child){
+            padding-top: 10px;
+         }
+      }
+      .mainBlock-table__row{
+      }
+      .mainBlock-table__row-mobile{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-column-gap: 8px;
+         grid-row-gap: 14px;
+         padding-bottom: 15px;
+         &:not(:first-child){
+            padding-top: 0;
+         }
+      }
+      .mainBlock-table__column{
+         width: 100%;
+         padding: 0;
+         &::after{
+            display: none;
+         }
+      }
+      .select{
+         margin-bottom: 14px;
+         &:not(:last-child){
+            margin-bottom: 14px;
+         }
+      }
+      .btn{
+         margin-bottom: 8px;
+         width: 100%;
+      }
+      .btn-filter__back{
+         margin-top: 32px;
+      }
+      .mainBlock-table__list--grid{
+         display: block;
+      }
+      .mainBlock-table__item{
+
+         &:last-child{
+            padding-bottom: 14px;
+         }
+      }
+      .mainBlock-table__column-mobile{
+         position: relative;
+         margin-bottom: 14px;
+         &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            background: $border;
+         }
+      }
+   }
+   .mainBlock {
+      padding: 22px 0px 20px;
+   }
+   .mainBlock-card {
+      margin: 24px 0px;
+   }
 }
 // MAX-WIDTH 991.98PX breakpoints END
 
 // MAX-WIDTH 767.98PX breakpoints START
 @media (max-width: 767.98px) {
-    
+   .mainBlock-card {
+       grid-template-columns: 1fr;
+       grid-row-gap: 29px;
+   }
+   .cardEmployee {
+      height: 205px;
+      width: calc(328px + (423 - 328) * ((100vw - 360px) / (767 - 360)));
+   }
+   .cardEmployee-photo {
+      width: 150px;
+      height: 205px;
+      margin-right: 14px;
+   }
+   .counter-employee {
+      width: 14px;
+      height: 14px;
+   }
+   .cardEmployee-action__item {
+      .counter-employee {
+         top: -3px;
+         right: -3px;
+      }
+   }
 }
 // MAX-WIDTH 767.98PX breakpoints END
 

@@ -32,6 +32,20 @@
       display: none;
       width: 34px;
       justify-content: center;
+      .icon-burger{
+         display: block;
+      }
+      .icon-close{
+         display: none;
+      }
+      &.open{
+         .icon-burger{
+            display: none;
+         }
+         .icon-close{
+            display: block;
+         }
+      }
    }
 }
 .nav{
@@ -213,7 +227,14 @@
    &__subtitle{
       display: inline-block;
       margin-bottom: 24px;
+      margin-right: 5px;
       color: $secondText;
+      font-size: 14px;
+      line-height: 18px;
+   }
+   &__breadcrumbs{
+      display: inline-block;
+      color: #999896;
       font-size: 14px;
       line-height: 18px;
    }
