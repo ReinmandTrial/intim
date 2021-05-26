@@ -3,29 +3,35 @@ $(function(){
 $(window).on("load resize",(function(){
    if($(window).width()<"991"){
       $('.sidebar').append($('.nav')); 
-      $('.sidebar').find('.sidebar-filter__header').removeClass('js-btn');
+      $('.sidebar').find('.sidebar-filter__header').addClass('mobile');
+      $('.mainBlock-filter__btn').find('.btn-filter').addClass('mobile');
+      $('.mainBlock-table__column').find('.check').unwrap();
    }else{ 
       $('.header>.container').append($('.nav'));
-      $('.sidebar').find('.sidebar-filter__header').addClass('js-btn');
+      $('.sidebar').find('.sidebar-filter__header').removeClass('mobile');
+      $('.mainBlock-filter__btn').find('.btn-filter').removeClass('mobile');
    }
 }));
 //
 //burger
 $('.burger').on('click',function(){
    $('.sidebar').toggleClass('open');
-   $(this).find('.icon-burger').toggleClass('d-none');
-   $(this).find('.icon-close').toggleClass('d-none');
+   $(this).toggleClass('open');
+   $('.burger-second').removeClass('open');
+   $('.mainBlock-filter').removeClass('open');
 })
 $('.burger-second').on('click',function(){
    $('.mainBlock-filter').toggleClass('open');
-   $(this).find('.icon-burger').toggleClass('d-none');
-   $(this).find('.icon-close').toggleClass('d-none');
+   $(this).toggleClass('open');
+   $('.burger').removeClass('open');
+   $('.sidebar').removeClass('open');
 })
 //end burger
-
 $('.js-btn').on('click',function(){
-   $(this).next().slideToggle('slow');
-   $(this).toggleClass('open');
+   if(!$(this).hasClass('mobile')){
+      $(this).next().slideToggle('slow');
+      $(this).toggleClass('open');
+   }
 })
 //
 $('.sidebar-choice__item').on('click',function(){
@@ -42,22 +48,40 @@ $('.sidebar-choice__item').on('click',function(){
 //
 //
 $('.btn-filter').on('click',function(){
-   var btns = $(this).closest('.mainBlock-filter__btn').find('.btn-filter');
-   var btnBloks = $(this).closest('.mainBlock-filter').find('.mainBlock-filter__body').find('.mainBlock-filter__item');
-   if($(this).hasClass('active')){
-      $(this).removeClass('active');
-      $(btnBloks).each(function(){
-         $(this).hide('slow');
-      })
+   var btn = $(this);
+   var btns = btn.closest('.mainBlock-filter__btn').find('.btn-filter');
+   var btnBloks = btn.closest('.mainBlock-filter').find('.mainBlock-filter__body').find('.mainBlock-filter__item');
+   if(!btn.hasClass('mobile')){
+      if(btn.hasClass('active')){
+         btn.removeClass('active');
+         $(btnBloks).each(function(){
+            $(this).hide('slow');
+         })
+      }else{
+         var i = 0;
+         $(btns).each(function(){
+            $(this).removeClass('active');
+         });
+         $(btnBloks).each(function(){
+            $(this).hide('slow');
+         })
+         btn.addClass('active');
+         $(btns).each(function(index){
+            if($(this).hasClass('active')){
+               i = index;
+            }
+         });
+         $(btnBloks).each(function(index){
+            if(index === i){
+               $(this).show('slow');
+            }
+         })
+      }
    }else{
+      $('.mainBlock-filter__btn').hide('slow');
       var i = 0;
-      $(btns).each(function(){
-         $(this).removeClass('active');
-      });
-      $(btnBloks).each(function(index){
-         $(this).hide('slow');
-      })
-      $(this).addClass('active');
+      var breadCr = btn.find('.btn-filter__title').text();
+      btn.addClass('active');
       $(btns).each(function(index){
          if($(this).hasClass('active')){
             i = index;
@@ -68,10 +92,21 @@ $('.btn-filter').on('click',function(){
             $(this).show('slow');
          }
       })
-
+      $('.mainBlock-filter__breadcrumbs').text('/ ' + breadCr);
    }
 })
-
+$('.mainBlock-filter__subtitle, .btn-filter__back').on('click',function(){
+   var btns = $('.mainBlock-filter__btn').find('.btn-filter');
+   var body = $('.mainBlock-filter__body').find('.mainBlock-filter__item');
+   $(body).each(function(){
+      $(this).hide('slow');
+   })
+   $(btns).each(function(){
+      $(this).removeClass('active');
+   })
+   $('.mainBlock-filter__btn').show('slow');
+   $('.mainBlock-filter__breadcrumbs').text(' ');
+})
 //select
 $('.select-header').on('click',function(){
    $(this).next().slideToggle('slow');

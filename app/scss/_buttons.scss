@@ -46,4 +46,14 @@
             background: #383838;
         }
     }
+    &-filter__title{
+        span{
+            &:not(:first-child){
+                display: none;
+            }
+        }
+    }
+    &-filter__back{
+        display: none;
+    }
 }
