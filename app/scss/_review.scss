@@ -1,0 +1,49 @@
+.container-review {
+    max-width: 776px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 64px;
+}
+
+.review-card {
+    padding: 24px;
+    background: $border;
+    border-radius: 12px;
+    display: flex;
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    &__img {
+        margin-right: 16px;
+        border-radius: 12px;
+        width: 95px;
+        height: 129px;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+    }
+    &__description {
+
+    }
+    &__title {
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    &__title-description {
+    }
+    &__signature {
+        display: flex;
+        margin-bottom: 0;
+        margin-top: auto;
+        color: $secondText;
+    }
+    &__signature-name {
+        margin-right: 32px;
+    }
+    &__signature-date {
+
+    }
+
+}
