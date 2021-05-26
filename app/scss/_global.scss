@@ -27,6 +27,9 @@ body {
   max-width: 1214px;
   margin: 0 auto;
   padding: 0 15px;
+  &-create{
+	  padding: 64px 0;
+  }
 }
 
 .breadcrumbs{
@@ -67,6 +70,10 @@ body {
 				transform: rotate(180deg);
 			}
 		}
+		&:hover,
+		&.open{
+			border-color: $mainColor;
+		}
 	}
 	&-body{
 		position: absolute;
@@ -76,7 +83,7 @@ body {
 		display: none;
 		width: 100%;
 		border-radius: 9px;
-		border: 1px solid $input;
+		border: 1px solid $mainColor;
 		overflow: hidden;
 		background: $white;
 	}
@@ -312,6 +319,13 @@ body {
 	&-title{
 		font-weight: 500;
 		margin-bottom: 8px;
+	}
+	&-subtitle{
+		display: block;
+		font-size: 12px;
+		line-height: 16px;
+		color: $secondText;
+		margin-top: 2px;
 	}
 	&-input{
 		width: 100%;
