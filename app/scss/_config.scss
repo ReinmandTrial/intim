@@ -40,3 +40,6 @@ $hover: #BAA983;
   font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1920 - 360)));
   line-height: calc(14px + (18 - 14) * ((100vw - 360px) / (1920 - 360)));
 }
+.d-none{
+  display: none !important;
+}

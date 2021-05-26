@@ -10,9 +10,11 @@
    .btn{
       width: 171px;
       margin-left: 24px;
+      order: 2;
    }
    .btn-contour{
       margin-left: auto;
+      order: 1;
    }
    .icon{
       color: $mainColor;
@@ -24,6 +26,12 @@
    }
    .icon-heart{
       margin-left: auto;
+   }
+   .burger,
+   .burger-second{
+      display: none;
+      width: 34px;
+      justify-content: center;
    }
 }
 .nav{
@@ -84,6 +92,10 @@
 }
 .sidebar{
    width: 266px;
+   transition: all .5s;
+   &.open{
+      left: 0;
+   }
    &-nav__item{
       padding-bottom: 14px;
       display: flex;
@@ -192,7 +204,19 @@
          margin-right: 15px;
       }
    }
-   
+   &__titleMobile{
+      display: none;
+   }
+   &__title{
+      margin-bottom: 7px;
+   }
+   &__subtitle{
+      display: inline-block;
+      margin-bottom: 24px;
+      color: $secondText;
+      font-size: 14px;
+      line-height: 18px;
+   }
 }
 
 .mainBlock{

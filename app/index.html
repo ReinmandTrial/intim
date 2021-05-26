@@ -17,7 +17,10 @@
     <header class="header">
       <!-- <div class="icon-test"><span class="icon icon-nice"></span> <i class="icon icon-nice"></i></div> -->
       <div class="container">
-        <span class="icon icon-burger"></span>
+        <div class="burger">
+          <span class="icon icon-burger"></span>
+          <span class="icon icon-close d-none"></span>
+        </div>
         <div class="logo">
           <a href="#">
             <img src="images/Logo.png" alt="">
@@ -35,7 +38,10 @@
           <button class="btn btn-primary">Войти</button>
           <a class="icon icon-heart" href="#"></a>
           <a class="icon icon-profile" href="#"></a>
-          <span class="icon icon-burger icon-second-burger"></span>
+          <div class="burger-second">
+            <span class="icon icon-burger icon-second-burger"></span>
+            <span class="icon icon-close d-none"></span>
+          </div>
       </div>
     </header>
     <!-- HEADER end  -->
@@ -66,7 +72,7 @@
                 </div>
                 <div class="sidebar-filter__list">
                   <div class="sidebar-filter__item">
-                    <div class="sidebar-filter__header">
+                    <div class="sidebar-filter__header js-btn">
                       <span class="sidebar-filter__title">
                         По Цене
                       </span>
@@ -84,7 +90,7 @@
                     </div>
                   </div>
                   <div class="sidebar-filter__item">
-                    <div class="sidebar-filter__header">
+                    <div class="sidebar-filter__header js-btn">
                       <span class="sidebar-filter__title">
                         По возрасту
                       </span>
@@ -102,7 +108,7 @@
                     </div>
                   </div>
                   <div class="sidebar-filter__item">
-                    <div class="sidebar-filter__header">
+                    <div class="sidebar-filter__header js-btn">
                       <span class="sidebar-filter__title">
                         По национальности
                       </span>
@@ -128,6 +134,10 @@
                 </div>
                 <!-- breadcrumbs end -->
                 <div class="mainBlock-filter">
+                  <div class="mainBlock-filter__titleMobile">
+                    <div class="mainBlock-filter__title h1">Фильтр и категории</div>
+                    <a class="mainBlock-filter__subtitle" href="#">Фильтр и категории</a>
+                  </div>
                   <div class="mainBlock-filter__btn">
                     <div class="btn btn-filter"><span class="btn-filter__title">Фильр</span><span
                         class="icon icon-triangle-down"></span></div>
