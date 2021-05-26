@@ -1,10 +1,15 @@
-.container-review {
+.container-reduced {
     max-width: 776px;
     margin: 0 auto;
     padding: 0 15px;
     margin-bottom: 64px;
+    margin-top: 64px;
 }
-
+.review {
+    &__content {
+        margin-top: 48px;
+    }
+}
 .review-card {
     padding: 24px;
     background: $border;
@@ -32,11 +37,10 @@
         margin-bottom: 10px;
     }
     &__title-description {
+        margin-bottom: 49px;
     }
     &__signature {
         display: flex;
-        margin-bottom: 0;
-        margin-top: auto;
         color: $secondText;
     }
     &__signature-name {
@@ -46,4 +50,20 @@
 
     }
 
+}
+
+
+.profile {
+    &__nav {
+        margin: 48px 0px 40px;
+        display: flex; 
+    }
+    &__item {
+        &:not(:first-child) {
+            margin-left: 12px;
+        }
+    }
+    &__link {
+        padding: 10px 12px 10px 14px;
+    }
 }

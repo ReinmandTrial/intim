@@ -33,6 +33,15 @@ body {
 	color: $secondText;
 	display: flex;
 	margin-top: 8px;
+	&__title {
+		margin-bottom: 8px;
+	}
+	&__link {
+		&:not(:first-child) {
+			margin-left: 6px;
+		}
+	}
+	
 }
 
 .select{
