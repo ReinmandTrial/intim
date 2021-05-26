@@ -74,3 +74,16 @@ $('.cardEmployee-title>.icon-heart').on('click',function(){
    $(this).toggleClass('likes');
 })
 //Лайк конец
+
+//dots на карточке 
+$('.cardEmployee-title__list').on('click',function(){
+   $(this).find('.cardEmployee-popup').show('slow');
+})
+$(document).on('click', function(e) {
+   if (!$(e.target).closest(".cardEmployee-popup").length && !$(e.target).closest(".cardEmployee-title__list").length) {
+     $('.cardEmployee-popup').hide('slow');
+   }
+   e.stopPropagation();
+ });
+//dots на карточке end
+
