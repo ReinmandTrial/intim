@@ -54,3 +54,8 @@ $('.check').on('click',function(){
    $(this).find('.check-Box').toggleClass('active');
 })
 //checkBox end
+//Лайк
+$('.cardEmployee-title>.icon-heart').on('click',function(){
+   $(this).toggleClass('likes');
+})
+//Лайк конец
