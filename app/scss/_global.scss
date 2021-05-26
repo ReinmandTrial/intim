@@ -137,6 +137,9 @@ body {
 				background: $mainColor;
 				border: none;
 			}
+			&:hover{
+				border-color: $mainColor;
+			}
 		}
 		&-label{
 			margin-left: 6px;
@@ -212,8 +215,7 @@ body {
 		.icon{
 			cursor: pointer;
 			&.likes{
-				// fill: red;
-				color: red;
+				color: $mainColor;
 			}
 		}
 	}
@@ -276,6 +278,12 @@ body {
 		color: $input;
 		&::placeholder{
 			color: $input;
+		}
+		&:hover{
+			border-color: $mainColor;
+		}
+		&:focus{
+			border-color: $mainColor;
 		}
 	}
 }

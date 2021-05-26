@@ -22,6 +22,9 @@
       cursor: pointer;
       display: inline-block;
       margin-left: 24px;
+      &:hover{
+         color: $mainColor;
+      }
    }
 }
 .footer{
@@ -77,6 +80,9 @@
    }
    &-nav__link{
       margin-right: 5px;
+      &:hover{
+         color: $mainColor;
+      }
    }
    &-filter__item{
       padding: 14px 0;
@@ -112,6 +118,11 @@
             transform: rotate(180deg);
          }
       }
+      &:hover{
+         .icon{
+            color: $mainColor;
+         }
+      }
    }
    &-filter__body{
       display: none;
@@ -126,6 +137,12 @@
    }
    &-choice__item{
       font-weight: 400;
+      &:hover{
+         color: $mainColor;
+      }
+      &.active{
+         color: $mainColor;
+      }
    }
    &__description {
       padding-top: 12px;

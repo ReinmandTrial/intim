@@ -6,13 +6,13 @@
     transition: 0.5s;
     cursor: pointer;
     text-align: center;
-    span {
-        &:first-child {
-            
-        }
-        &:not(:first-child) {
-            
-        }
+    &:hover{
+        background: $hover;
+        color: $white;
+    }
+    &:focus{
+        background: #CCB990;
+        color: $white;
     }
     &-primary {
         background-color: $mainColor;
@@ -42,5 +42,8 @@
         justify-content: space-between;
         background: $textColor;
         color: $white;
+        &:hover{
+            background: #383838;
+        }
     }
 }

@@ -5,6 +5,21 @@ $('.sidebar-filter__header').on('click',function(){
    $(this).next().slideToggle('slow');
    $(this).toggleClass('open');
 })
+//
+//
+$('.sidebar-choice__item').on('click',function(){
+   var items = $(this).closest('.sidebar-choice__list').find('.sidebar-choice__item');
+   if($(this).hasClass('active')){
+      $(this).removeClass('active');
+   }else{
+      $(items).each(function(){
+         $(this).removeClass('active');
+      })
+      $(this).addClass('active');
+   }
+})
+//
+//
 $('.btn-filter').on('click',function(){
    var btns = $(this).closest('.mainBlock-filter__btn').find('.btn-filter');
    var btnBloks = $(this).closest('.mainBlock-filter').find('.mainBlock-filter__body').find('.mainBlock-filter__item');
