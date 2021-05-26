@@ -256,7 +256,7 @@ body {
 		.icon{
 			display: inline-block;
 			margin-left: 4px;
-			font-size: 12px;
+			font-size: 14px;
 		}
 	}
 	&-discr__list{
@@ -316,6 +316,7 @@ body {
 
 //ВВод данных
 .entry{
+	margin-top: 16px;
 	&-title{
 		font-weight: 500;
 		margin-bottom: 8px;
@@ -326,6 +327,7 @@ body {
 		line-height: 16px;
 		color: $secondText;
 		margin-top: 2px;
+		font-style: italic;
 	}
 	&-input{
 		width: 100%;
