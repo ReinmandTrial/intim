@@ -46,7 +46,9 @@ body {
 	}
 	
 }
-
+.d-flex{
+	display: flex !important;
+}
 .select{
 	width: 100%;
 	color: $input;
@@ -152,9 +154,20 @@ body {
 			margin-left: 6px;
 		}
 		&-round{
-			border-radius: 50%;
-			&.active{
-				border: 5px solid $mainColor;
+			display: flex;
+			align-items: center;
+			color: $textColor;
+			cursor: pointer;
+			width: fit-content;
+			.check-Box{
+				border-radius: 50%;
+				&.active{
+					background: $white;
+					border: 5px solid $mainColor;
+				}
+			}
+			&:hover{
+				border-color: $mainColor;
 			}
 		}
 }
@@ -366,6 +379,20 @@ body {
 		&:focus{
 			border-color: $mainColor;
 		}
+	}
+	&-input-second{
+		display: flex;
+		height: 24px;
+		width: 79px;
+	}
+	&-input__currency{
+		border-radius: 6px 0 0 6px;
+		background: $mainColor;
+		color: $white;
+		width: 20px;
+		height: 24px;
+		display: block;
+		padding: 3px 4px;
 	}
 }
 //Ввод данных конец 

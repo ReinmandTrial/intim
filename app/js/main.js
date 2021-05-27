@@ -6,6 +6,15 @@ $(window).on("load resize",(function(){
       $('.sidebar').find('.sidebar-filter__header').addClass('mobile');
       $('.mainBlock-filter__btn').find('.btn-filter').addClass('mobile');
       $('.mainBlock-table__column').find('.check').unwrap();
+      // if (/iPhone|iPad|/i.test(navigator.userAgent)) {
+      //    // alert("Вы используете мобильное устройство (телефон или планшет).")
+      //    $('.sidebar').css('padding-bottom','100px');
+      //    $('.mainBlock-filter').css('padding-bottom','100px');
+      // } else{
+      //    $('.sidebar').css('padding-bottom','50px');
+      //    $('.mainBlock-filter').css('padding-bottom','100px');
+      //    // alert("Вы используете ПК.")
+      // }
    }else{ 
       $('.header>.container').append($('.nav'));
       $('.sidebar').find('.sidebar-filter__header').removeClass('mobile');
@@ -46,6 +55,15 @@ $('.sidebar-choice__item').on('click',function(){
    }
 })
 //
+//check box круглый
+$('.check-round').on('click',function(){
+   var checkBox = $(this).closest('.entry').find('.check-round');
+   $(checkBox).each(function(){
+      $(this).find('.check-Box').removeClass('active');
+   })
+   $(this).find('.check-Box').addClass('active');
+})
+//check box круглый конец
 //
 $('.btn-filter').on('click',function(){
    var btn = $(this);
@@ -123,6 +141,11 @@ $('.select-item').on('click',function(){
 //checkBox
 $('.check').on('click',function(){
    $(this).find('.check-Box').toggleClass('active');
+   if($(this).closest('.mainBlock-table__item').hasClass('mainBlock-table__item--double') && !$(this).hasClass('check--double')){
+      $(this).closest('.mainBlock-table__item--double').find('.entry').slideToggle('.slow')
+      $(this).closest('.mainBlock-table__item--double').find('.entry').css('display','flex');
+      $(this).closest('.mainBlock-table__item--double').find('.check--double').slideToggle('.slow')
+   }
 })
 //checkBox end
 //Лайк
@@ -143,3 +166,70 @@ $(document).on('click', function(e) {
  });
 //dots на карточке end
 
+//create info выбор блоков
+$('.profile__link-js').on('click',function(){
+   var i = 0;//индекс блока по порядку
+   var btns = $(this).closest('.profile__nav').find('.profile__item');
+   var block = $(this).closest('.profile__nav').next().find('.mainBlock-table-js');
+   //выбор кнопки
+   $(btns).each(function(){
+      $(this).find('.profile__link-js').removeClass('btn-primary').addClass('btn-contour');
+   })
+   $(this).removeClass('btn-contour').addClass('btn-primary');
+   //выбор кнопки
+   //находим индекс нужной кнопки
+   $(btns).each(function(index){
+      if($(this).find('.profile__link-js').hasClass('btn-primary')){
+         i = index;
+      }
+   })
+   //открываем нужный блок и закрываем не нужный
+   $(block).each(function(index){
+      if(index === i){
+         $(this).show('slow');
+      }else{
+         $(this).hide('slow');
+         $(this).removeClass('open');
+      }
+   })
+
+})
+//create info выбор блоков end
+//create info popup 
+$('.btn-popupCreate').on('click',function(){
+   $('.popupCreate').fadeIn();
+})
+//end
+//upDate info popup
+$('.btn-popupUpdate').on('click',function(){
+   $('.popupUpdate').fadeIn();
+})
+$('.btn-popupRegistration').on('click',function(){
+   $('.popupRegistration').fadeIn();
+})
+$('.btn-popupEnter').on('click',function(){
+   $('.popupEnter').fadeIn();
+})
+$('.popupEnter-link__create>a').on('click',function(){
+   $(this).closest('.popup').fadeOut();
+   $('.popupRegistration').fadeIn();
+})
+//end
+//close popup btn-popupRegistration
+$('.popup-link, .popup-close').on('click',function(){
+   $(this).closest('.popup').fadeOut();
+})
+//close popup end
+
+
+$('.faq__item').on('click',function(){
+   var items = $(this).closest('.faq__list').find('.faq__item');
+   if($(this).hasClass('active')){
+      $(this).removeClass('active');
+   }else{
+      $(items).each(function(){
+         $(this).removeClass('active');
+      })
+      $(this).addClass('active');
+   }
+})

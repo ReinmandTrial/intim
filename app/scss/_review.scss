@@ -95,6 +95,11 @@
             border-radius: 12px;
             background: #F0EEEB;
         }
+        &.active {
+            .faq__body {
+                display: block;
+            }
+        }
     }
     &__filter-item {
         &::after {

@@ -322,6 +322,12 @@
       grid-row-gap: 32px;
       grid-column-gap: 32px;
    }
+   &-table-js{
+      display: none;
+      &.open{
+         display: block;
+      }
+   }
 }
 
 .errorBlock{
@@ -444,8 +450,429 @@
       height: 104px; 
    }
    .entry-input{
+      &:not(:last-child){
+         margin-bottom: 8px;
+      }
+   }
+   .check-choice{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+   .mainBlock-table__column{
+      .check{
+         &:not(:last-child){
+            margin-bottom: 12px;
+         }
+      }
+   }
+   .mainBlock-table__hasTitle{
+      flex-wrap: wrap;
+      .mainBlock-table__title{
+         width: 100%;
+         margin-bottom: 16px;
+      }
+      .mainBlock-table__column{
+         &:nth-child(2){
+            padding-left: 0;
+            &::after{
+               display: none;
+            }
+         }
+      }
+      .mainBlock-table__item{
+         margin-bottom: 18px;
+      }
+      .h3{
+         margin-bottom: 18px;
+      }
+      .mainBlock-table__list--grid{
+         .mainBlock-table__item{
+            width: 306px;
+            margin-right: 20px;
+         }
+      }
+   }
+   .mainBlock-table__item{
+      .entry{
+         margin: 0;
+      }
+   }
+   .entry-choice{
+      display: flex;
+   }
+   .entry-choice__item{
+      width: 50%;
+      display: flex;
+      align-items: center;
       &:not(:first-child){
-         margin-top: 8px;
+         .entry-choice__title{
+            margin-left: 8px;
+         }
+      }
+      .entry-input{
+         margin: 0;
+      }
+   }
+   .entry-choice__title{
+      margin-right: 8px;
+   }
+   .btn{
+      width: 200px;
+      margin-right: 12px;
+      margin-top: 32px;
+   }
+}
+.mainBlock-table__item--double{
+   display: flex;
+   flex-wrap: wrap;
+   .entry{
+      display: none;
+      padding-left: 25px;
+      // display: flex;
+      align-items: center;
+   }
+   .entry-title{
+      display: inline-block;
+      margin-bottom: 2px;
+      margin-right: 8px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: $secondText;
+
+   }
+   .check{
+      margin-bottom: 0 !important;
+   }
+   .entry-input{
+      display: inline-block;
+      width: 61px;
+      height: 24px;
+      padding: 3px 8px;
+      border-radius: 0 6px 6px 0;
+   }
+   .check--double{
+      display: none;
+      padding-left: 25px;
+      margin-top: 7px;
+   }
+   .entry-input--second{
+      display: flex;
+   }
+}
+.locate{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   &-title{
+      width: 100%;
+      margin-bottom: 16px;
+   }
+   &-map{
+      width: calc((100% / 3) * 2);
+      height: 250px;
+      border-radius: 9px;
+      img{
+         width: 100%;
+         height: 100%;
+      }
+   }
+   &-discr{
+      width: calc(100% / 3);
+      padding-left: 20px;
+   }
+}
+
+.download{
+   &-title{
+      display: block;
+      font-weight: 500;
+      padding-bottom: 12px;
+   }
+   &-item{
+      margin-bottom: 5px;
+   }
+   &-list{
+      padding-left: 25px !important;
+      list-style: disc !important;
+   }
+   &-photo__list{
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 24px;
+      position: relative;
+      &::after{
+         content: '';
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         left: 0;
+         width: 100%;
+         height: 1px;
+         background: $border;
+      }
+   }
+   &-photo__item{
+      position: relative;
+      margin-right: 20px;
+      width: 150px;
+      height: 150px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+   }
+   &-photo__img{
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      img{
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+   &-photo__del{
+      cursor: pointer;
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      z-index: 2;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: $mainColor;
+      .icon{
+         font-size: 9px;
+         color: $white;
+         font-weight: 700;
+      }
+   }
+   &-photo__discr{
+      padding: 35px 12px 13px;
+      border-color: $mainColor;
+      background: #FAF7F2;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      color: $mainColor;
+   }
+   &-photo__info{
+      width: 100%;
+      &:last-child{
+         margin-top: 30px;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         
+      }
+      span{
+         font-size: 18px;
+      }
+   }
+   &-photo__link{
+      background: #ECEBE8;
+      border-radius: 12px;
+      color: $secondText;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+}
+.control{
+   padding-bottom: 24px;
+   position: relative;
+   &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $border;
+   }
+   &-text{
+      margin-bottom: 12px;
+      width: 674px;
+   }
+   &-link{
+      font-style: italic;
+      font-weight: 500;
+   }
+   &-input{
+      width: 328px;
+      height: 135px;
+      border-radius: 12px;
+      border: 1px solid $mainColor;
+      background: #FAF7F2;
+      color: $mainColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
+.downloadVideo{
+   padding-bottom: 24px;
+   position: relative;
+   &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $border;
+   }
+   &-title{
+      padding-bottom: 20px;
+      font-weight: 500;
+   }
+   &-input{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 328px;
+      height: 180px;
+      background: #ECEBE8;
+      border-radius: 12px;
+      color: $secondText;
+   }
+}
+
+.popup{
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   width: 100%;
+   height: 100vh;
+   background: radial-gradient(109.17% 49.94% at 50% 50.06%, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.94) 100%);
+   color: $white;
+   text-align: center;
+   .d-flex{
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+   }
+   &-body{
+      display: block;
+      margin: 0 auto;
+      width: 350px;
+      height: max-content;
+   }
+   .h2{
+      padding-bottom: 12px;
+   }
+   &-text{
+      padding-bottom: 16px;
+   }
+   &-link{
+      color: $mainColor;
+   }
+}
+
+.popupRegistration{
+   .icon-close{
+      cursor: pointer;
+      position: absolute;
+      top: 31px;
+      right: 24px;
+      font-size: 22px;
+      color: $textColor;
+   }
+   .h1{
+      padding-bottom: 12px;
+   }
+   .entry{
+      margin-top: 0;
+      margin-bottom: 16px;
+   }
+   .popup-body{
+      position: relative;
+      width: 400px;
+      text-align: left;
+      padding: 24px;
+      background: $white;
+      border-radius: 12px;
+      color: $textColor;
+   }
+   .check-round{
+      margin-top: 10px;
+   }
+   .check-title{
+      margin-bottom: 10px;
+   }
+   .check-hint{
+      padding-top: 4px;
+      font-size: 14px;
+      line-height: 18px;
+      color: $secondText;
+   }
+   .check{
+      margin-bottom: 16px;
+      align-items: start;
+   }
+   .btn{
+      width: 100%;
+   }
+   .check-text{
+      margin-left: 6px;
+   }
+   .check-rules{
+      display: flex;
+      padding-bottom: 16px;
+      a{
+         color: $mainColor;
+      }
+   }
+}
+.popupEnter{
+   .icon-close{
+      cursor: pointer;
+      position: absolute;
+      top: 31px;
+      right: 24px;
+      font-size: 22px;
+      color: $textColor;
+   }
+   .h1{
+      padding-bottom: 12px;
+   }
+   .popup-body{
+      position: relative;
+      width: 400px;
+      text-align: left;
+      padding: 24px;
+      background: $white;
+      border-radius: 12px;
+      color: $textColor;
+   }
+   .btn{
+      width: 100%;
+   }
+   .entry{
+      margin-top: 0;
+      margin-bottom: 16px;
+   }
+   &-link{
+      padding: 4px 0 20px;
+      text-align: center;
+      color: $secondText;
+   }
+   &-link__create{
+      padding-top: 20px;
+      text-align: center;
+      span{
+         margin-right: 5px;
+      }
+      a{
+         color: $mainColor;
       }
    }
 }
