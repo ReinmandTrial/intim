@@ -16,6 +16,13 @@
    .sidebar {
       padding-right: 15px;
    }   
+   .errorBlock-employee {
+      grid-template-columns: 1fr 1fr;
+      .cardEmployee {
+         margin: 0 auto;
+         width: calc(328px + (423 - 328) * ((100vw - 360px) / (1199 - 360)));
+      }
+   }
 } 
 // MAX-WIDTH 1199.98PX breakpoints END
 
@@ -253,8 +260,18 @@
          margin-bottom: 20px;
       }
    }
+   .errorBlock-employee {
+      grid-template-columns: 1fr 1fr;
+      .cardEmployee {
+         width: 328px;
+      }
+   }
+   .errorBlock-content {
+      padding: 123px 62px;
+   }
 }
 // MAX-WIDTH 991.98PX breakpoints END
+
 
 // MAX-WIDTH 767.98PX breakpoints START
 @media (max-width: 767.98px) {
@@ -289,6 +306,33 @@
          margin-bottom: 14px;
       }
    }
+   .errorBlock-employee {
+      grid-template-columns: 1fr;
+      .cardEmployee {
+         width: calc(328px + (423 - 328) * ((100vw - 360px) / (1199 - 360)))
+      }
+   }
+   .container-reduced {
+      margin-top: 22px;
+      margin-bottom: 40px;
+   }
+   .questionnaireBlock {
+      .btn {
+         width: 100%;
+         margin: 0 auto;
+         margin-top: 24px;
+         margin-bottom: 20px;
+      }
+      &-list {
+         grid-template-columns: 1fr;
+      }
+   }
+   .review__content {
+      margin-top: 24px;
+   }
+   .review-card__signature-name {
+      display: none;
+   }
 }
 // MAX-WIDTH 767.98PX breakpoints END
 
@@ -313,5 +357,27 @@
          display: none;
       }
    }
+   .profile__nav {
+      display: none;
+   }
+   .replenishBlock {
+      &-balance {
+         margin-top: 24px;
+      }
+      &-table__money {
+         width: calc(104px + (253 - 153) * ((100vw - 360px) / (575 - 360)));
+      }
+      .entry,
+      .btn {
+         width: calc(328px + (368 - 328) * ((100vw - 360px) / (575 - 360)));
+      }
+   }
+   .settingsBlock {
+      width: 100%;
+      .btn {
+         width: 100%;
+      }
+   }
+
 }
 // MAX-WIDTH 576.98PX breakpoints END 

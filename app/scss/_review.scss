@@ -21,8 +21,10 @@
     &__img {
         margin-right: 16px;
         border-radius: 12px;
-        width: 95px;
-        height: 129px;
+        // width: 95px;
+        // height: 129px;
+        min-width: calc(61px + (95 - 61) * ((100vw - 360px) / (1920 - 360)));
+        min-height: calc(82px + (129 - 82) * ((100vw - 360px) / (1920 - 360)));
         img {
             width: 100%;
             height: 100%;
@@ -30,14 +32,20 @@
         }
     }
     &__description {
-
+        width: calc(240px + (617 - 240) * ((100vw - 360px) / (1920 - 360)));
+        height: calc(62px + (133 - 62) * ((100vw - 360px) / (1920 - 360)));
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &__title {
         font-weight: 500;
         margin-bottom: 10px;
     }
     &__title-description {
-        margin-bottom: 49px;
+        margin-bottom: calc(0px + (49 - 0) * ((100vw - 360px) / (1920 - 360)));
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &__signature {
         display: flex;
@@ -65,5 +73,52 @@
     }
     &__link {
         padding: 10px 12px 10px 14px;
+    }
+}
+
+.faq {
+    &__list {
+
+    }
+    &__item {
+        font-weight: 500;
+        padding: 14px 0px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            border-radius: 12px;
+            background: #F0EEEB;
+        }
+    }
+    &__filter-item {
+        &::after {
+            display: none;
+        }
+    }
+    &__header {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .icon {
+            font-size: 10px;
+        }
+    }
+    &__title {
+
+    }
+    &__body {
+        display: none;
+        width: 100%;
+    }
+    &__description {
+        padding-top: 12px;
+        font-weight: 400;
     }
 }

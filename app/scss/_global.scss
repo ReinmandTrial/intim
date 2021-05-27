@@ -152,20 +152,9 @@ body {
 			margin-left: 6px;
 		}
 		&-round{
-			display: flex;
-			align-items: center;
-			color: $textColor;
-			cursor: pointer;
-			width: fit-content;
-			.check-Box{
-				border-radius: 50%;
-				&.active{
-					background: $white;
-					border: 5px solid $mainColor;
-				}
-			}
-			&:hover{
-				border-color: $mainColor;
+			border-radius: 50%;
+			&.active{
+				border: 5px solid $mainColor;
 			}
 		}
 }
