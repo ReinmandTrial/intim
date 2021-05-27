@@ -151,6 +151,12 @@ body {
 		&-label{
 			margin-left: 6px;
 		}
+		&-round{
+			border-radius: 50%;
+			&.active{
+				border: 5px solid $mainColor;
+			}
+		}
 }
 
 .cardEmployee{
