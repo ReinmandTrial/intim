@@ -46,7 +46,9 @@ body {
 	}
 	
 }
-
+.d-flex{
+	display: flex !important;
+}
 .select{
 	width: 100%;
 	color: $input;
@@ -377,6 +379,20 @@ body {
 		&:focus{
 			border-color: $mainColor;
 		}
+	}
+	&-input-second{
+		display: flex;
+		height: 24px;
+		width: 79px;
+	}
+	&-input__currency{
+		border-radius: 6px 0 0 6px;
+		background: $mainColor;
+		color: $white;
+		width: 20px;
+		height: 24px;
+		display: block;
+		padding: 3px 4px;
 	}
 }
 //Ввод данных конец 

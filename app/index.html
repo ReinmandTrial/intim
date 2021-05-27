@@ -34,8 +34,8 @@
           <a class="nav-item" href="#">Отзывы</a>
           <a class="nav-item" href="#">Интим карта</a>
         </div>
-        <button class="btn btn-contour">Создать аккаунт</button>
-        <button class="btn btn-primary">Войти</button>
+        <button class="btn btn-contour btn-popupRegistration">Создать аккаунт</button>
+        <button class="btn btn-primary btn-popupEnter">Войти</button>
         <a class="icon icon-heart" href="#"></a>
         <a class="icon icon-profile" href="#"></a>
         <div class="burger-second">
@@ -141,7 +141,7 @@
                   </div>
                   <div class="mainBlock-filter__btn">
                     <div class="btn btn-filter">
-                      <span class="btn-filter__title"><span>Фильтр </span><span>анкет</span></span> 
+                      <span class="btn-filter__title"><span>Фильтр </span><span>анкет</span></span>
                       <span class="icon icon-triangle-down"></span>
                     </div>
                     <div class="btn btn-filter">
@@ -796,7 +796,69 @@
         </section>
       </div>
       <!-- CONTENT end -->
-
+      <!-- popup  -->
+      <div class="popup popupRegistration">
+        <div class="d-flex">
+          <div class="popup-body">
+            <div class="h1">Регистрация</div>
+            <span class="icon icon-close popup-close"></span>
+            <div class="entry">
+              <div class="entry-title">Вы</div>
+              <div class="check-choice">
+                <div class="check-round">
+                  <div class="check-Box"></div>
+                  <span class="check-label">Дон</span>
+                </div>
+                <div class="check-hint h4">Пользователь интересующийся девушками.</div>
+                <div class="check-round">
+                  <div class="check-Box"></div>
+                  <span class="check-label">Рекламодетель</span>
+                </div>
+                <div class="check-hint h4">Девушки, модели, проститутки, индивидуалки, масажистки, салоны.</div>
+              </div>
+            </div>
+            <div class="entry">
+              <div class="entry-title">Логин</div>
+              <input type="password" class="entry-input" placeholder="Введите логин">
+            </div>
+            <div class="entry">
+              <div class="entry-title">Пароль</div>
+              <input type="password" class="entry-input" placeholder="Введите пароль">
+            </div>
+            <div class="entry">
+              <div class="entry-title">Подтвердите пароль</div>
+              <input type="password" class="entry-input" placeholder="Введите пароль">
+            </div>
+            <div class="check-rules">
+              <div class="check">
+                <div class="check-Box"><span class="icon icon-chek"></span></div>
+              </div>
+              <div class="check-text">Я ознакомился/ась с <a href="#">правилами</a> и принимаю их</div>
+            </div>
+            <button class="btn btn-primary">Зарегистрироваться</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup popupEnter">
+        <div class="d-flex">
+          <div class="popup-body">
+            <div class="h1">Вход</div>
+            <span class="icon icon-close popup-close"></span>
+            <div class="entry">
+              <div class="entry-title">Логин</div>
+              <input type="password" class="entry-input" placeholder="Введите логин">
+            </div>
+            <div class="entry">
+              <div class="entry-title">Пароль</div>
+              <input type="password" class="entry-input" placeholder="Введите пароль">
+            </div>
+            <div class="popupEnter-link"><a href="#">Восстановить пароль</a></div>
+            <button class="btn btn-primary">Войти</button>
+            <div class="popupEnter-link__create"><span>Нет аккаунта?</span><a href="#">Создайте</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- popup end  -->
     </main>
     <!-- MAIN end -->
 

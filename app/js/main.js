@@ -6,6 +6,15 @@ $(window).on("load resize",(function(){
       $('.sidebar').find('.sidebar-filter__header').addClass('mobile');
       $('.mainBlock-filter__btn').find('.btn-filter').addClass('mobile');
       $('.mainBlock-table__column').find('.check').unwrap();
+      // if (/iPhone|iPad|/i.test(navigator.userAgent)) {
+      //    // alert("Вы используете мобильное устройство (телефон или планшет).")
+      //    $('.sidebar').css('padding-bottom','100px');
+      //    $('.mainBlock-filter').css('padding-bottom','100px');
+      // } else{
+      //    $('.sidebar').css('padding-bottom','50px');
+      //    $('.mainBlock-filter').css('padding-bottom','100px');
+      //    // alert("Вы используете ПК.")
+      // }
    }else{ 
       $('.header>.container').append($('.nav'));
       $('.sidebar').find('.sidebar-filter__header').removeClass('mobile');
@@ -132,6 +141,11 @@ $('.select-item').on('click',function(){
 //checkBox
 $('.check').on('click',function(){
    $(this).find('.check-Box').toggleClass('active');
+   if($(this).closest('.mainBlock-table__item').hasClass('mainBlock-table__item--double') && !$(this).hasClass('check--double')){
+      $(this).closest('.mainBlock-table__item--double').find('.entry').slideToggle('.slow')
+      $(this).closest('.mainBlock-table__item--double').find('.entry').css('display','flex');
+      $(this).closest('.mainBlock-table__item--double').find('.check--double').slideToggle('.slow')
+   }
 })
 //checkBox end
 //Лайк
@@ -181,3 +195,30 @@ $('.profile__link-js').on('click',function(){
 
 })
 //create info выбор блоков end
+//create info popup 
+$('.btn-popupCreate').on('click',function(){
+   $('.popupCreate').fadeIn();
+})
+//end
+//upDate info popup
+$('.btn-popupUpdate').on('click',function(){
+   $('.popupUpdate').fadeIn();
+})
+$('.btn-popupRegistration').on('click',function(){
+   $('.popupRegistration').fadeIn();
+})
+$('.btn-popupEnter').on('click',function(){
+   $('.popupEnter').fadeIn();
+})
+$('.popupEnter-link__create>a').on('click',function(){
+   $(this).closest('.popup').fadeOut();
+   $('.popupRegistration').fadeIn();
+})
+//end
+//close popup btn-popupRegistration
+$('.popup-link, .popup-close').on('click',function(){
+   $(this).closest('.popup').fadeOut();
+})
+//close popup end
+
+
