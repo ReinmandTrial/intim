@@ -46,6 +46,15 @@ $('.sidebar-choice__item').on('click',function(){
    }
 })
 //
+//check box круглый
+$('.check-round').on('click',function(){
+   var checkBox = $(this).closest('.entry').find('.check-round');
+   $(checkBox).each(function(){
+      $(this).find('.check-Box').removeClass('active');
+   })
+   $(this).find('.check-Box').addClass('active');
+})
+//check box круглый конец
 //
 $('.btn-filter').on('click',function(){
    var btn = $(this);
@@ -143,3 +152,32 @@ $(document).on('click', function(e) {
  });
 //dots на карточке end
 
+//create info выбор блоков
+$('.profile__link-js').on('click',function(){
+   var i = 0;//индекс блока по порядку
+   var btns = $(this).closest('.profile__nav').find('.profile__item');
+   var block = $(this).closest('.profile__nav').next().find('.mainBlock-table-js');
+   //выбор кнопки
+   $(btns).each(function(){
+      $(this).find('.profile__link-js').removeClass('btn-primary').addClass('btn-contour');
+   })
+   $(this).removeClass('btn-contour').addClass('btn-primary');
+   //выбор кнопки
+   //находим индекс нужной кнопки
+   $(btns).each(function(index){
+      if($(this).find('.profile__link-js').hasClass('btn-primary')){
+         i = index;
+      }
+   })
+   //открываем нужный блок и закрываем не нужный
+   $(block).each(function(index){
+      if(index === i){
+         $(this).show('slow');
+      }else{
+         $(this).hide('slow');
+         $(this).removeClass('open');
+      }
+   })
+
+})
+//create info выбор блоков end

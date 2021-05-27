@@ -62,15 +62,18 @@
                </div>
                <!-- breadcrumbs end -->
                <ul class="profile__nav">
-                  <li class="profile__item"><a class="btn profile__link btn-primary" href="#">Основная информация</a>
+                  <li class="profile__item"><a class="btn btn-primary profile__link profile__link-js" href="#">Основная
+                        информация</a>
                   </li>
-                  <li class="profile__item"><a class="btn btn-contour profile__link" href="#">Загрузка фото</a></li>
-                  <li class="profile__item"><a class="btn btn-contour profile__link" href="#">Проверка фото</a></li>
-                  <li class="profile__item"><a class="btn btn-contour profile__link" href="#">Загрузка видео</a></li>
+                  <li class="profile__item"><a class="btn btn-contour profile__link profile__link-js" href="#">Загрузка
+                        фото</a></li>
+                  <li class="profile__item"><a class="btn btn-contour profile__link profile__link-js" href="#">Проверка
+                        фото</a></li>
+                  <li class="profile__item"><a class="btn btn-contour profile__link profile__link-js" href="#">Загрузка
+                        видео</a></li>
                </ul>
                <div class="createInfo">
-
-                  <div class="mainBlock-table">
+                  <div class="mainBlock-table mainBlock-table-js open">
                      <div class="mainBlock-table__row">
                         <div class="mainBlock-table__column">
                            <div class="mainBlock-table__item">
@@ -188,18 +191,99 @@
                            <div class="mainBlock-table__item">
                               <div class="entry">
                                  <div class="entry-title">Время для звонков</div>
-                                 <input type="text" class="entry-input" placeholder="От 07:00">
-                                 <input type="text" class="entry-input" placeholder="До 23:00">
+                                 <div class="entry-choice">
+                                    <div class="entry-choice__item">
+                                       <span class="entry-choice__title">От</span>
+                                       <input type="text" class="entry-input" placeholder="От 07:00">
+                                    </div>
+                                    <div class="entry-choice__item">
+                                       <span class="entry-choice__title">До</span>
+                                       <input type="text" class="entry-input" placeholder="До 23:00">
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                            <div class="mainBlock-table__item">
                               <div class="entry">
-                                 <div class="entry-title">Время для звонков</div>
-                                 <div class="check check-round">
-                                    <div class="check-Box"></div>
-                                    <span class="check-label">Есть</span>
-                                    <div class="check-Box"></div>
-                                    <span class="check-label">Нет</span>
+                                 <div class="entry-title">Пирсинг</div>
+                                 <div class="check-choice">
+                                    <div class="check-round">
+                                       <div class="check-Box"></div>
+                                       <span class="check-label">Есть</span>
+                                    </div>
+                                    <div class="check-round">
+                                       <div class="check-Box"></div>
+                                       <span class="check-label">Нет</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <span class="mainBlock-table__title">Цвет волос</span>
+                              <div class="select">
+                                 <div class="select-header">
+                                    <span class="select-header__title">Выберите цвет волос</span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </div>
+                                 <div class="select-body">
+                                    <div class="select-item">
+                                       <span class="select-item__text">Дешевые</span>
+                                    </div>
+                                    <div class="select-item">
+                                       <span class="select-item__text">2000-3000</span>
+                                    </div>
+                                    <div class="select-item">
+                                       <span class="select-item__text">3000-4000</span>
+                                    </div>
+                                    <div class="select-item">
+                                       <span class="select-item__text">4000-5000</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="entry">
+                                 <div class="entry-title">Загран паспорт</div>
+                                 <div class="check-choice">
+                                    <div class="check-round">
+                                       <div class="check-Box"></div>
+                                       <span class="check-label">Есть</span>
+                                    </div>
+                                    <div class="check-round">
+                                       <div class="check-Box"></div>
+                                       <span class="check-label">Нет</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="entry">
+                                 <div class="entry-title">Условия выезда</div>
+                                 <div class="check-choice">
+                                    <div class="check-choice__item">
+                                       <div class="check">
+                                          <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                          <span class="check-label">Апартаменты</span>
+                                       </div>
+                                    </div>
+                                    <div class="check-choice__item">
+                                       <div class="check">
+                                          <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                          <span class="check-label">Выезд на дом</span>
+                                       </div>
+                                       <div class="check">
+                                          <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                          <span class="check-label">Выезд в гостиницу</span>
+                                       </div>
+                                       <div class="check">
+                                          <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                          <span class="check-label">Выезд в сауны</span>
+                                       </div>
+                                       <div class="check">
+                                          <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                          <span class="check-label">Выезд за город</span>
+                                       </div>
+                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -254,6 +338,440 @@
                            </div>
                         </div>
                      </div>
+                     <div class="mainBlock-table__row">
+                        <div class="locate">
+                           <span class="mainBlock-table__title locate-title">Местоположение</span>
+                           <div class="locate-map">
+                              <img src="images/Map.png" alt="">
+                           </div>
+                           <div class="locate-discr">
+                              <div class="mainBlock-table__item">
+                                 <span class="mainBlock-table__title">Метро</span>
+                                 <div class="select">
+                                    <div class="select-header">
+                                       <span class="select-header__title">Выберите метро</span>
+                                       <span class="icon icon-triangle-down"></span>
+                                    </div>
+                                    <div class="select-body">
+                                       <div class="select-item">
+                                          <span class="select-item__text">Дешевые</span>
+                                       </div>
+                                       <div class="select-item">
+                                          <span class="select-item__text">2000-3000</span>
+                                       </div>
+                                       <div class="select-item">
+                                          <span class="select-item__text">3000-4000</span>
+                                       </div>
+                                       <div class="select-item">
+                                          <span class="select-item__text">4000-5000</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="mainBlock-table__item">
+                                 <span class="mainBlock-table__title">Район</span>
+                                 <div class="select">
+                                    <div class="select-header">
+                                       <span class="select-header__title">Выберите район</span>
+                                       <span class="icon icon-triangle-down"></span>
+                                    </div>
+                                    <div class="select-body">
+                                       <div class="select-item">
+                                          <span class="select-item__text">Дешевые</span>
+                                       </div>
+                                       <div class="select-item">
+                                          <span class="select-item__text">2000-3000</span>
+                                       </div>
+                                       <div class="select-item">
+                                          <span class="select-item__text">3000-4000</span>
+                                       </div>
+                                       <div class="select-item">
+                                          <span class="select-item__text">4000-5000</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                     <div class="mainBlock-table__row mainBlock-table__hasTitle">
+                        <span class="mainBlock-table__title h2">Услуги</span>
+                        <div class="mainBlock-table__column">
+                           <span class="mainBlock-table__title h3">Телосложение</span>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Классический секс</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Анальный секс</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Групповой секс</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Лесбийский секс</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Минет в презервативе</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Минет без презерватива</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Минет глубокий</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Минет в машине</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Горловой минет (Иррумация)</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Куннилингус</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="mainBlock-table__column">
+                           <span class="mainBlock-table__title h3">Дополнительное</span>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Поцелуи в губы</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Окончание в рот</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Окончание на грудь</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Окончание на лицо</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Стриптиз не профи</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Стриптиз профи</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Лесби-шоу легкое</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Лесби-шоу откровенное</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Услуги семейной паре</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Эскорт</span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="mainBlock-table__column">
+                           <span class="mainBlock-table__title h3">Экстрим</span>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Aнилингус делаю</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Игрушки</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Ролевые игры</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Страпон</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Фистинг анальный</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Золотой дождь выдача</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">Золотой дождь прием</span>
+                              </div>
+                           </div>
+                           <div class="mainBlock-table__item">
+                              <div class="check">
+                                 <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                 <span class="check-label">БДСМ</span>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="mainBlock-table__row mainBlock-table__hasTitle">
+                        <span class="mainBlock-table__title h3">Масаж</span>
+                        <div class="mainBlock-table__list mainBlock-table__list--grid">
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Расслабляющий</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Боди-массаж</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Точечный</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Классический</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Ветка сакуры</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Лингама</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Эротический</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Гидромассаж</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Урологический</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Профессиональный</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Тайский</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Тантрический</span>
+                                 </div>
+                              </div>
+                           </a>
+                           <a class="mainBlock-table__item" href="#">
+                              <div class="mainBlock-table__item">
+                                 <div class="check">
+                                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                                    <span class="check-label">Аква-пенный</span>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <button class="btn btn-primary btn-continue">Продолжить</button>
+                     <button class="btn btn-contour">Обновить</button>
+                  </div>
+                  <div class="mainBlock-table mainBlock-table-js">
+                     <div class="download">
+                        <span class="download-title">Загрузка фото (для страницы анкеты):</span>
+                        <ul class="download-list">
+                           <li class="download-item">Минимальное количество фото - 3, максимальное - 15.</li>
+                           <li class="download-item">Минимальное разрешение 400 px.</li>
+                           <li class="download-item">Допускаются к размещению только фотографии хорошего качества.</li>
+                           <li class="download-item">На фотографиях не должны быть водяные знаки, логотипы других
+                              сайтов.</li>
+                           <li class="download-item">На фотографиях не должны быть видны гениталии, ретушируете сами.
+                           </li>
+                           <li class="download-item">По краям фотографии не должны быть белые рамки, фото должны быть
+                              чистыми.</li>
+                        </ul>
+                        <div class="download-photo__list">
+                           <div class="download-photo__item download-photo__pattern">
+                              <div class="download-photo__img">
+                                 <img src="images/Загрузка-1.png" alt="">
+                              </div>
+                              <div class="download-photo__del"><span class="icon icon-close"></span></div>
+                              <!-- <div class="download-photo__discr">
+                                 <div class="h4 download-photo__info">Загрузите как минимум 3 фотографий.</div>
+                                 <div class="h4 download-photo__info">
+                                    <div>Загрузить</div>
+                                    <div><span>1</span> / 3</div>
+                                 </div>
+                              </div> -->
+                           </div>
+                           <div class="download-photo__item download-photo__pattern">
+                              <div class="download-photo__img">
+                                 <img src="images/Загрузка-2.png" alt="">
+                              </div>
+                              <div class="download-photo__del"><span class="icon icon-close"></span></div>
+                              <!-- <div class="download-photo__discr">
+                                 <div class="h4 download-photo__info">Загрузите как минимум 3 фотографий.</div>
+                                 <div class="h4 download-photo__info">
+                                    <div>Загрузить</div>
+                                    <div><span>2</span> / 3</div>
+                                 </div>
+                              </div> -->
+                           </div>
+                           <div class="download-photo__item download-photo__pattern">
+                              <!-- <div class="download-photo__img">
+                                 <img src="" alt="">
+                              </div>
+                              <div class="download-photo__del"><span class="icon icon-close"></span></div> -->
+                              <div class="download-photo__discr">
+                                 <div class="h4 download-photo__info">Загрузите как минимум 3 фотографий.</div>
+                                 <div class="h4 download-photo__info">
+                                    <a href="#">Загрузить</a>
+                                    <div><span>3</span> / 3</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="download-photo__item download-photo__link">
+                              <a href="#">Загрузить <br>фото</a>
+                           </div>
+                        </div>
+                        <button class="btn btn-primary btn-continue">Продолжить</button>
+                        <button class="btn btn-contour">Обновить</button>
+                     </div>
+                  </div>
+                  <div class="mainBlock-table mainBlock-table-js">
+                     <div class="control">
+                        <p class="control-text">Для новых анкет (в день добавления анкеты на сайт) дата на проверочной фотке не должна превышать 1 неделю!</p>
+                        <p class="control-text">Для проверки фотографии и получения значка "Проверено" необходимо загрузить проверочное фото с листком, где написано:</p>
+                        <p class="control-text"><a class="control-link" href="#">Текущая дата для Feimsk.nl или для Feimsk</a></p>
+                        <p class="control-text">Вы должны сфоткаться в белье в полный рост или если на фотках анкеты вы не в белье, тогда в той же одежде, в которой вы на фотках анкеты и фигура должна соответствовать фотографиям анкеты, если например заметно пополнели или фотосессия очень старая, то "фото проверено" не сможем поставить. Поэтому фотосессия должна быть актуальной.</p>
+                        <p class="control-text">Если на фотографиях анкеты видно лицо, то на проверочной фотке тоже должно быть лицо Открыто. Запрещены типажные фотки для получения статуса «Фото проверено».</p>
+                        <div class="control-input">
+                           <a class="control-input__link" href="#">Загрузите фото для проверки</a>
+                        </div>
+                     </div>
+                     <button class="btn btn-primary btn-continue">Продолжить</button>
+                     <button class="btn btn-contour">Обновить</button>
+                  </div>
+                  <div class="mainBlock-table mainBlock-table-js">
+                     <div class="downloadVideo">
+                        <div class="downloadVideo-title">Вы можете загрузить одно короткое видео по желанию</div>
+                        <div class="downloadVideo-input"><a href="#">Загрузите видео</a></div>
+                     </div>
+                     <button class="btn btn-primary btn-continue">Продолжить</button>
+                     <button class="btn btn-contour">Обновить</button>
                   </div>
                </div>
             </div>
