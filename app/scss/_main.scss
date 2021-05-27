@@ -439,3 +439,13 @@
       margin-left: auto;
    }
 }
+.createInfo{
+   .entry-textarea{
+      height: 104px; 
+   }
+   .entry-input{
+      &:not(:first-child){
+         margin-top: 8px;
+      }
+   }
+}

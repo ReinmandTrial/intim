@@ -345,5 +345,21 @@ body {
 			border-color: $mainColor;
 		}
 	}
+	&-textarea{
+		width: 100%;
+		border: 1px solid $input;
+		border-radius: 9px;
+		padding: 12px 14px;
+		color: $input;
+		&::placeholder{
+			color: $input;
+		}
+		&:hover{
+			border-color: $mainColor;
+		}
+		&:focus{
+			border-color: $mainColor;
+		}
+	}
 }
 //Ввод данных конец 

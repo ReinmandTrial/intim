@@ -267,6 +267,15 @@
 
 // MAX-WIDTH 576.98PX breakpoints START 
 @media (max-width: 575.98px) {
-    
+    .sidebar{
+       padding-bottom: 50px;
+       left: -100%;
+       width: 100%;
+    }
+    .mainBlock-filter{
+      padding-bottom: 50px;
+       right: -100%;
+       width: 100%;
+    }
 }
 // MAX-WIDTH 576.98PX breakpoints END 
