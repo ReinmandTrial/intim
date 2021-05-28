@@ -1,20 +1,9 @@
-$(function(){
-})
 $(window).on("load resize",(function(){
    if($(window).width()<"991"){
       $('.sidebar').append($('.nav')); 
       $('.sidebar').find('.sidebar-filter__header').addClass('mobile');
       $('.mainBlock-filter__btn').find('.btn-filter').addClass('mobile');
       $('.mainBlock-table__column').find('.check--grid').unwrap();
-      // if (/iPhone|iPad|/i.test(navigator.userAgent)) {
-      //    // alert("Вы используете мобильное устройство (телефон или планшет).")
-      //    $('.sidebar').css('padding-bottom','100px');
-      //    $('.mainBlock-filter').css('padding-bottom','100px');
-      // } else{
-      //    $('.sidebar').css('padding-bottom','50px');
-      //    $('.mainBlock-filter').css('padding-bottom','100px');
-      //    // alert("Вы используете ПК.")
-      // }
    }else{ 
       $('.header>.container').append($('.nav'));
       $('.sidebar').find('.sidebar-filter__header').removeClass('mobile');
@@ -44,6 +33,25 @@ $('.btn-burger__profile').on('click',function(){
    $('.burger-second').removeClass('open');
    $('.mainBlock-filter').removeClass('open');
 })
+$(document).mouseup(function (e) {
+   var sidebar = $(".sidebar");
+   var filter = $('.mainBlock-filter');
+   var profile = $('.burger__profile');
+   if (sidebar.has(e.target).length === 0 && $('.burger').has(e.target).length === 0){
+      sidebar.removeClass('open');
+      $('.burger').removeClass('open');
+   }
+    if (filter.has(e.target).length === 0 && $('.burger-second').has(e.target).length === 0){
+      filter.removeClass('open');
+      $('.burger-second').removeClass('open');
+   }
+});
+$(document).on('click', function(e) {
+   if (!$(e.target).closest(".burger__profile").length && !$(e.target).closest(".icon-profile").length) {
+     $('.burger__profile').removeClass('open');
+   }
+   e.stopPropagation();
+ });
 //end burger
 $('.js-btn').on('click',function(){
    if(!$(this).hasClass('mobile')){
@@ -228,6 +236,13 @@ $('.popupEnter-link__create>a').on('click',function(){
 $('.popup-link, .popup-close').on('click',function(){
    $(this).closest('.popup').fadeOut();
 })
+$(document).on('click', function(e) {
+   if (!$(e.target).closest(".popup-body").length && !$(e.target).closest('.btn-popupRegistration').length
+   && !$(e.target).closest('.btn-popupEnter').length && !$(e.target).closest('.btn-popupUpdate').length && !$(e.target).closest('.btn-continue').length) {
+     $('.popup').fadeOut();
+   }
+   e.stopPropagation();
+ });
 //close popup end
 
 
