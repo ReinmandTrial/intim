@@ -12,11 +12,13 @@
 
   <!-- WRAPPER start -->
   <div class="wrapper">
-
     <!-- HEADER start  -->
     <header class="header">
-      <!-- <div class="icon-test"><span class="icon icon-nice"></span> <i class="icon icon-nice"></i></div> -->
       <div class="container">
+        <div class="burger">
+          <span class="icon icon-burger"></span>
+          <span class="icon icon-close"></span>
+        </div>
         <div class="logo">
           <a href="#">
             <img src="images/Logo.png" alt="">
@@ -30,28 +32,837 @@
           <a class="nav-item" href="#">Отзывы</a>
           <a class="nav-item" href="#">Интим карта</a>
         </div>
-        <div class="btn btn-contour">Создать аккаунт</div>
-        <div class="btn btn-primary">Войти</div>
+        <button class="btn btn-contour btn-popupRegistration">Создать аккаунт</button>
+        <button class="btn btn-primary btn-popupEnter">Войти</button>
+        <a class="icon icon-heart" href="#"></a>
+        <a class="icon icon-profile btn-burger__profile" href="#"></a>
+        <div class="burger-second">
+          <span class="icon icon-burger icon-second-burger"></span>
+          <span class="icon icon-close"></span>
+        </div>
       </div>
     </header>
     <!-- HEADER end  -->
+    <!-- burgers-block  -->
+    <div class="burgers-notMain">
+      <!-- SIDEBAR start  -->
+      <div class="sidebar">
+        <div class="sidebar-nav__list">
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Ожидают звонка</a><span
+              class="counter">12</span></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">С реальным фото</a><span
+              class="counter">125</span></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Анкеты с видео</a><span
+              class="counter">54</span></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Новые анкеты</a></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">С большой грудью</a></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Экспресс услуги</a></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Страпон</a></div>
+        </div>
+        <div class="sidebar-filter__list">
+          <div class="sidebar-filter__item">
+            <div class="sidebar-filter__header js-btn">
+              <span class="sidebar-filter__title">
+                По Цене
+              </span>
+              <span class="icon icon-triangle-down"></span>
+            </div>
+            <div class="sidebar-filter__body">
+              <div class="sidebar-choice__list">
+                <a class="sidebar-choice__item" href="#">Дешевые</a>
+                <a class="sidebar-choice__item" href="#">1500-2000</a>
+                <a class="sidebar-choice__item" href="#">2000-3000</a>
+                <a class="sidebar-choice__item" href="#">3000-4000</a>
+                <a class="sidebar-choice__item" href="#">4000-5000</a>
+                <a class="sidebar-choice__item" href="#">Элитные</a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-filter__item">
+            <div class="sidebar-filter__header js-btn">
+              <span class="sidebar-filter__title">
+                По возрасту
+              </span>
+              <span class="icon icon-triangle-down"></span>
+            </div>
+            <div class="sidebar-filter__body">
+              <div class="sidebar-choice__list">
+                <a class="sidebar-choice__item" href="#">Молодые</a>
+                <a class="sidebar-choice__item" href="#">20-25</a>
+                <a class="sidebar-choice__item" href="#">25-30</a>
+                <a class="sidebar-choice__item" href="#">30-35</a>
+                <a class="sidebar-choice__item" href="#">35-40</a>
+                <a class="sidebar-choice__item" href="#">Элитные</a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-filter__item">
+            <div class="sidebar-filter__header js-btn">
+              <span class="sidebar-filter__title">
+                По национальности
+              </span>
+              <span class="icon icon-triangle-down"></span>
+            </div>
+            <div class="sidebar-filter__body">
+              <div class="sidebar-choice__list">
+                <a class="sidebar-choice__item" href="#">Русские</a>
+                <a class="sidebar-choice__item" href="#">Славянки</a>
+                <a class="sidebar-choice__item" href="#">Азиатки</a>
+                <a class="sidebar-choice__item" href="#">Негритянки</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SIDEBAR end  -->
+      <div class="mainBlock-filter">
+        <div class="mainBlock-filter__titleMobile">
+          <div class="mainBlock-filter__title h1">Фильтр и категории</div>
+          <a class="mainBlock-filter__subtitle" href="#">Фильтр и категории</a><span
+            class="mainBlock-filter__breadcrumbs"></span>
+        </div>
+        <div class="mainBlock-filter__btn">
+          <div class="btn btn-filter">
+            <span class="btn-filter__title"><span>Фильтр </span><span>анкет</span></span>
+            <span class="icon icon-triangle-down"></span>
+          </div>
+          <div class="btn btn-filter">
+            <span class="btn-filter__title">Предпочтения</span>
+            <span class="icon icon-triangle-down"></span></span>
+          </div>
+          <div class="btn btn-filter">
+            <span class="btn-filter__title">Категории</span>
+            <span class="icon icon-triangle-down"></span></span>
+          </div>
+        </div>
+        <div class="mainBlock-filter__body">
+          <div class="mainBlock-filter__item">
+            <div class="mainBlock-table">
+              <div class="mainBlock-table__row">
+                <div class="mainBlock-table__column">
+                  <span class="mainBlock-table__title">По цене</span>
+                  <div class="select">
+                    <div class="select-header">
+                      <span class="select-header__title">Выберите цену</span>
+                      <span class="icon icon-triangle-down"></span>
+                    </div>
+                    <div class="select-body">
+                      <div class="select-item">
+                        <span class="select-item__text">Дешевые</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">2000-3000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">3000-4000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">4000-5000</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="mainBlock-table__title">По цене</span>
+                  <div class="select">
+                    <div class="select-header">
+                      <span class="select-header__title">Выберите цену</span>
+                      <span class="icon icon-triangle-down"></span>
+                    </div>
+                    <div class="select-body">
+                      <div class="select-item">
+                        <span class="select-item__text">Дешевые</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">2000-3000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">3000-4000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">4000-5000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mainBlock-table__column">
+                  <span class="mainBlock-table__title">По цене</span>
+                  <div class="select">
+                    <div class="select-header">
+                      <span class="select-header__title">Выберите цену</span>
+                      <span class="icon icon-triangle-down"></span>
+                    </div>
+                    <div class="select-body">
+                      <div class="select-item">
+                        <span class="select-item__text">Дешевые</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">2000-3000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">3000-4000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">4000-5000</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="mainBlock-table__title">По цене</span>
+                  <div class="select">
+                    <div class="select-header">
+                      <span class="select-header__title">Выберите цену</span>
+                      <span class="icon icon-triangle-down"></span>
+                    </div>
+                    <div class="select-body">
+                      <div class="select-item">
+                        <span class="select-item__text">Дешевые</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">2000-3000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">3000-4000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">4000-5000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mainBlock-table__column">
+                  <span class="mainBlock-table__title">По цене</span>
+                  <div class="select">
+                    <div class="select-header">
+                      <span class="select-header__title">Выберите цену</span>
+                      <span class="icon icon-triangle-down"></span>
+                    </div>
+                    <div class="select-body">
+                      <div class="select-item">
+                        <span class="select-item__text">Дешевые</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">2000-3000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">3000-4000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">4000-5000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mainBlock-table__row mainBlock-table__row-mobile">
+                <div class="mainBlock-table__column">
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                </div>
+                <div class="mainBlock-table__column">
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+
+                </div>
+                <div class="mainBlock-table__column">
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary">Применить</button>
+            <button class="btn btn-contour">Сбросить</button>
+            <button class="btn btn-contour btn-filter__back">Назад</button>
+          </div>
+          <div class="mainBlock-filter__item">
+            <div class="mainBlock-table">
+              <div class="mainBlock-table__row">
+                <div class="mainBlock-table__column mainBlock-table__column-mobile">
+                  <span class="mainBlock-table__title">Основное</span>
+                  <div class="mainBlock-table__list">
+                    <a class="mainBlock-table__item" href="#">Классический секс</a>
+                    <a class="mainBlock-table__item" href="#">Анальный секс</a>
+                    <a class="mainBlock-table__item" href="#">Групповой секс</a>
+                    <a class="mainBlock-table__item" href="#">Лесбийский секс</a>
+                    <a class="mainBlock-table__item" href="#">Минет в презервативе</a>
+                    <a class="mainBlock-table__item" href="#">Минет без презерватива</a>
+                    <a class="mainBlock-table__item" href="#">Минет глубокий</a>
+                    <a class="mainBlock-table__item" href="#">Минет в машине</a>
+                    <a class="mainBlock-table__item" href="#">Горловой минет (Иррумация)</a>
+                    <a class="mainBlock-table__item" href="#">Куннилингус</a>
+                  </div>
+                </div>
+                <div class="mainBlock-table__column mainBlock-table__column-mobile">
+                  <span class="mainBlock-table__title">Дополнительное</span>
+                  <div class="mainBlock-table__list">
+                    <a class="mainBlock-table__item" href="#">Поцелуи в губы</a>
+                    <a class="mainBlock-table__item" href="#">Окончание в рот</a>
+                    <a class="mainBlock-table__item" href="#">Окончание на грудь</a>
+                    <a class="mainBlock-table__item" href="#">Окончание на лицо</a>
+                    <a class="mainBlock-table__item" href="#">Стриптиз не профи</a>
+                    <a class="mainBlock-table__item" href="#">Стриптиз профи</a>
+                    <a class="mainBlock-table__item" href="#">Лесби-шоу легкое</a>
+                    <a class="mainBlock-table__item" href="#">Лесби-шоу откровенное</a>
+                    <a class="mainBlock-table__item" href="#">Услуги семейной паре</a>
+                    <a class="mainBlock-table__item" href="#">Эскорт</a>
+                  </div>
+                </div>
+                <div class="mainBlock-table__column mainBlock-table__column-mobile">
+                  <span class="mainBlock-table__title">Экстрим</span>
+                  <div class="mainBlock-table__list">
+                    <a class="mainBlock-table__item" href="#">Aнилингус делаю</a>
+                    <a class="mainBlock-table__item" href="#">Игрушки</a>
+                    <a class="mainBlock-table__item" href="#">Ролевые игры</a>
+                    <a class="mainBlock-table__item" href="#">Страпон</a>
+                    <a class="mainBlock-table__item" href="#">Фистинг анальный</a>
+                    <a class="mainBlock-table__item" href="#">Золотой дождь выдача</a>
+                    <a class="mainBlock-table__item" href="#">Золотой дождь прием</a>
+                    <a class="mainBlock-table__item" href="#">БДСМ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="mainBlock-table__title">Масаж</span>
+            <div class="mainBlock-table__list mainBlock-table__list--grid">
+              <a class="mainBlock-table__item" href="#">Расслабляющий</a>
+              <a class="mainBlock-table__item" href="#">Классический</a>
+              <a class="mainBlock-table__item" href="#">Эротический</a>
+              <a class="mainBlock-table__item" href="#">Профессиональный</a>
+              <a class="mainBlock-table__item" href="#">Аква-пенный</a>
+              <a class="mainBlock-table__item" href="#">Боди-массаж</a>
+              <a class="mainBlock-table__item" href="#">Ветка сакуры</a>
+              <a class="mainBlock-table__item" href="#">Гидромассаж</a>
+              <a class="mainBlock-table__item" href="#">Тайский</a>
+              <a class="mainBlock-table__item" href="#">Тантрический</a>
+              <a class="mainBlock-table__item" href="#">Точечный</a>
+              <a class="mainBlock-table__item" href="#">Лингама</a>
+              <a class="mainBlock-table__item" href="#">Урологический</a>
+            </div>
+            <button class="btn btn-contour btn-filter__back">Назад</button>
+          </div>
+          <div class="mainBlock-filter__item">
+            <button class="btn btn-contour btn-filter__back">Назад</button>
+          </div>
+        </div>
+      </div>
+      <div class="burger__profile">
+        <a href="" class="burger__profile-link">Мои анкеты</a>
+        <a href="" class="burger__profile-link">Пополнить баланс</a>
+        <a href="" class="burger__profile-link">Настройки профиля</a>
+        <a href="" class="burger__profile-link">FAQ</a>
+        <a href="" class="burger__profile-link">Выйти</a>
+      </div>
+    </div>
+    <!-- burgers-block end  -->
 
     <!-- MAIN start  -->
     <main class="main">
 
-      <!-- SIDEBAR start  -->
-      <sidebar class="sidebar">
-
-      </sidebar>
-      <!-- SIDEBAR end  -->
-
-
-      <!-- CONTENT start  -->
       <div class="content">
-         
-      </div>
-      <!-- CONTENT end -->
+        <div class="employee">
+          <div class="container">
+            <div class="employee-information">
+              <div class="employee-files">
+                <div class="employee-files__photo">
 
+                </div>
+                <div class="employee-file__video">
+
+                </div>
+              </div>
+              <div class="employee-description">
+                <div class="employee-title h1">Елизавета • 20 лет</div>
+                <div class="employee-subtitle"><span class="icon icon-nice"></span><a href="#">Арбатская</a></div>
+                <div class="employee-icon">
+                  <a class="icon icon-video" href="#"></a>
+                  <a class="icon icon-car" href="#"></a>
+                  <a class="icon icon-house" href="#"></a>
+                  <a class="icon icon-whatsapp" href="#"></a>
+                  <a class="icon icon-telegram" href="#"></a>
+                  <a class="icon icon-heart" href="#"></a>
+                </div>
+                <div class="employee-connect">
+                  <div class="employee-connect__data">
+                    <div class="employee-connect__phone">
+                      <div class="employee-connect__num">+7 926 126-81-67</div>
+                      <div class="employee-connect__clock">с 08:00 по 00:00</div>
+                    </div>
+                    <button class="btn btn-primary">Жду звонка</button>
+                  </div>
+                  <div class="employee-connect__info">
+                    <span>Сообщите мне, что звоните с сайта «Сайт» и я все пойму.😉</span>
+                  </div>
+                </div>
+                <div class="employee-warning">❗ Никогда не отправляйте предоплату</div>
+                <div class="employee-text">Сделаем безграничным полет фантазии - от ласк и нежности до развратного
+                  порно,
+                  нужно лишь почувствовать друг друга. Очень пластична, красиво двигаюсь. Только со мной ты узнаешь,
+                  какое наслаждение можно получить от оральных ласк.</div>
+                <div class="employee-data">
+                  <div class="employee-table">
+                    <div class="employee-table__row">
+                      <div class="employee-table__column">
+                        <div class="employee-table__item">
+                          <span class="employee-data__title">Рост:</span>
+                          <span class="employee-data__value">162</span>
+                        </div>
+                        <div class="employee-table__item">
+                          <span class="employee-data__title">Вес:</span>
+                          <span class="employee-data__value">57</span>
+                        </div>
+                        <div class="employee-table__item">
+                          <span class="employee-data__title">Грудь:</span>
+                          <span class="employee-data__value">2</span>
+                        </div>
+                        <div class="employee-table__item">
+                          <span class="employee-data__title">Национальность:</span>
+                          <span class="employee-data__value">Русская</span>
+                        </div>
+                        <div class="employee-table__item">
+                          <span class="employee-data__title">Телосложение:</span>
+                          <span class="employee-data__value">Стройная</span>
+                        </div>
+                      </div>
+                      <div class="employee-table__column">
+                        <div class="employee-table__item">
+                          <span class="employee-data__title">Интимная стрижка:</span>
+                          <span class="employee-data__value">Нет</span>
+                        </div>
+                        <div class="employee-table__item">
+                          <span class="employee-data__title">Цвет волос:</span>
+                          <span class="employee-data__value">Шатенка</span>
+                        </div>
+                        <div class="employee-table__item">
+                          <span class="employee-data__title">Ориентация:</span>
+                          <span class="employee-data__value">Гетеро</span>
+                        </div>
+                        <div class="employee-table__item">
+                          <span class="employee-data__title">Ограничения возраста:</span>
+                          <span class="employee-data__value">Принимаю старше 25 лет</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="employee-table__row">
+                      <div class="employee-table__column employee-table__column-solo">
+                        <div class="employee-table__column-header">
+                          <div class="employee-table__item">
+                            <span class="employee-column__item">Время</span>
+                            <span class="employee-column__item">Апартаменты</span>
+                            <span class="employee-column__item">Цены</span>
+                          </div>
+                        </div>
+                        <div class="employee-table__column-body">
+                          <div class="employee-table__item">
+                            <span class="employee-column__item employee-column__item--title">За час:</span>
+                            <span class="employee-column__item">4000 ₽</span>
+                            <span class="employee-column__item">5000 ₽</span>
+                          </div>
+                          <div class="employee-table__item">
+                            <span class="employee-column__item employee-column__item--title">За два часа:</span>
+                            <span class="employee-column__item">6000 ₽</span>
+                            <span class="employee-column__item">7000 ₽</span>
+                          </div>
+                          <div class="employee-table__item">
+                            <span class="employee-column__item employee-column__item--title">За ночь:</span>
+                            <span class="employee-column__item">18000 ₽</span>
+                            <span class="employee-column__item">19000 ₽</span>
+                          </div>
+                          <div class="employee-table__item">
+                            <span class="employee-column__item employee-column__item--title">Экспресс:</span>
+                            <span class="employee-column__item">3000 ₽</span>
+                            <span class="employee-column__item">4000 ₽</span>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="price-employee">
+              <div class="price__title h2">Услуги</div>
+              <div class="price-hint">
+                <div class="price-hint__item">
+                  <span class="price-hint__icon icon icon-nice"></span>
+                  <span class="price-hint__text">— включено в стоимость</span>
+                </div>
+                <div class="price-hint__item">
+                  <span class="price-hint__icon icon icon-nice"></span>
+                  <span class="price-hint__text">— по симпатии</span>
+                </div>
+                <div class="price-hint__item">
+                  <span class="price-hint__icon icon icon-nice"></span>
+                  <span class="price-hint__text">— за дополнительную плату</span>
+                </div>
+                <div class="price-hint__item">
+                  <span class="price-hint__icon icon icon-nice"></span>
+                  <span class="price-hint__text">— услуга не предоставляется</span>
+                </div>
+              </div>
+              <div class="price-body">
+                <div class="employee-table">
+                  <div class="employee-table__row">
+                    <div class="employee-table__column">
+                      <div class="price-table__title h3">Основное</div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Классический секс</span>
+                        <span class="price-cena"></span>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Лесбийский секс</span>
+                        <span class="price-cena">(+3000)</span>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Минет в презервативе</span>
+                        <span class="price-cena"></span>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Минет без презерватива</span>
+                        <span class="price-cena"></span>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Минет глубокий</span>
+                        <span class="price-cena">
+                          <spanv>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Горловой минет (Иррумация)</span>
+                        <span class="price-cena">(+700)</span>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Куннилингус</span>
+                        <span class="price-cena">(+1000)</span>
+                      </div>
+                    </div>
+                    <div class="employee-table__column">
+                      <div class="price-table__title h3">Дополнительное</div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Поцелуи в губы</span>
+                        <span class="price-cena"></span>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Окончание в рот</span>
+                        <span class="price-cena"></span>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Окончание на грудь</span>
+                        <span class="price-cena"></span>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Окончание на лицо</span>
+                        <span class="price-cena"></span>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span class="price-nope">Тесь</span>
+                        <span class="price-cena"></span>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Стриптиз профи</span>
+                        <span class="price-cena">(+4000)</span>
+                      </div>
+                      <div class="price-table__item">
+                        <span class="icon icon-nice"></span>
+                        <span>Услуги семейной паре</span>
+                        <span class="price-cena">(+4000)</span>
+                      </div>
+                    </div>
+                    <div class="employee-table__column employee-table__column-double">
+                      <div class="column-double__item">
+                        <div class="price-table__title h3">Массаж</div>
+                        <div class="price-table__item">
+                          <span class="icon icon-nice"></span>
+                          <span>Расслабляющий</span>
+                          <span class="price-cena"></span>
+                        </div>
+                        <div class="price-table__item">
+                          <span class="icon icon-nice"></span>
+                          <span>Классический</span>
+                          <span class="price-cena"></span>
+                        </div>
+                        <div class="price-table__item">
+                          <span class="icon icon-nice"></span>
+                          <span>Эротический</span>
+                          <span class="price-cena"></span>
+                        </div>
+                      </div>
+                      <div class="column-double__item">
+                        <div class="price-table__title h3">Экстрим</div>
+                        <div class="price-table__item">
+                          <span class="icon icon-nice"></span>
+                          <span>Ролевые игры</span>
+                          <span class="price-cena">(+2000)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review-employee">
+              <div class="review-employee__card">
+                <div class="review-employee__title h3">Отзывы</div>
+                <div class="review-list">
+                  <div class="review-item">
+                    <div class="card-score">
+                      <div class="card-score__photo">
+                        <div class="card-score__img">
+                          <img src="images/аватарка.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-score__content">
+                        <div class="card-score__header">
+                          <div class="card-score__title">Анонимный Дон</div>
+                          <div class="card-score__estimation">
+                            <span>5</span>
+                            <span class="icon icon-star-full"></span>
+                          </div>
+                          <span class="icon icon-triangle-down"></span>
+                        </div>
+                        <div class="card-score__list">
+                          <div class="card-score__item">
+                            <span>Внешность</span>
+                            <div class="card-score__stars">
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                            </div>
+                          </div>
+                          <div class="card-score__item">
+                            <span>Апартаменты</span>
+                            <div class="card-score__stars">
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                            </div>
+                          </div>
+                          <div class="card-score__item">
+                            <span>Качество услуг</span>
+                            <div class="card-score__stars">
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-score__text">Все было очень круто, мне такого никогда не делали, я просто в
+                          шоке.
+                          Нас застукала жена, то Елизавета сделала ей, то же, что и делала мне и жена простила меня.
+                        </div>
+                        <div class="card-score__date"><span>19.03.21, 13:45</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="card-score">
+                      <div class="card-score__photo">
+                        <div class="card-score__img">
+                          <img src="images/аватарка.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-score__content">
+                        <div class="card-score__header">
+                          <div class="card-score__title">Анонимный Дон</div>
+                          <div class="card-score__estimation">
+                            <span>5</span>
+                            <span class="icon icon-star-full"></span>
+                          </div>
+                          <span class="icon icon-triangle-down"></span>
+                        </div>
+                        <div class="card-score__list">
+                          <div class="card-score__item">
+                            <span>Внешность</span>
+                            <div class="card-score__stars">
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                            </div>
+                          </div>
+                          <div class="card-score__item">
+                            <span>Апартаменты</span>
+                            <div class="card-score__stars">
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                            </div>
+                          </div>
+                          <div class="card-score__item">
+                            <span>Качество услуг</span>
+                            <div class="card-score__stars">
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                              <span class="icon icon-star-full"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-score__text">Все было очень круто, мне такого никогда не делали, я просто в
+                          шоке.
+                          Нас застукала жена, то Елизавета сделала ей, то же, что и делала мне и жена простила меня.
+                        </div>
+                        <div class="card-score__date"><span>19.03.21, 13:45</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-give">
+                <div class="review-employee__title h3">Ваш отзыв</div>
+                <div class="review-give__content">
+                  <div class="card-score__item">
+                    <span>Внешность</span>
+                    <div class="card-score__stars">
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                    </div>
+                  </div>
+                  <div class="card-score__item">
+                    <span>Апартаменты</span>
+                    <div class="card-score__stars">
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                    </div>
+                  </div>
+                  <div class="card-score__item">
+                    <span>Качество услуг</span>
+                    <div class="card-score__stars">
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                      <span class="icon icon-star-full"></span>
+                    </div>
+                  </div>
+                </div>
+                <textarea class="review-give__textarea" placeholder="Напишите отзыв"></textarea>
+                <button class="btn btn-primary">Отправить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup  -->
+      <div class="popup popupRegistration">
+        <div class="d-flex">
+          <div class="popup-body">
+            <div class="h1">Регистрация</div>
+            <span class="icon icon-close popup-close"></span>
+            <div class="entry">
+              <div class="entry-title">Вы</div>
+              <div class="check-choice">
+                <div class="check-round">
+                  <div class="check-Box"></div>
+                  <span class="check-label">Дон</span>
+                </div>
+                <div class="check-hint h4">Пользователь интересующийся девушками.</div>
+                <div class="check-round">
+                  <div class="check-Box"></div>
+                  <span class="check-label">Рекламодетель</span>
+                </div>
+                <div class="check-hint h4">Девушки, модели, проститутки, индивидуалки, масажистки, салоны.</div>
+              </div>
+            </div>
+            <div class="entry">
+              <div class="entry-title">Логин</div>
+              <input type="password" class="entry-input" placeholder="Введите логин">
+            </div>
+            <div class="entry">
+              <div class="entry-title">Пароль</div>
+              <input type="password" class="entry-input" placeholder="Введите пароль">
+            </div>
+            <div class="entry">
+              <div class="entry-title">Подтвердите пароль</div>
+              <input type="password" class="entry-input" placeholder="Введите пароль">
+            </div>
+            <div class="check-rules">
+              <div class="check">
+                <div class="check-Box"><span class="icon icon-chek"></span></div>
+              </div>
+              <div class="check-text">Я ознакомился/ась с <a href="#">правилами</a> и принимаю их</div>
+            </div>
+            <button class="btn btn-primary">Зарегистрироваться</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup popupEnter">
+        <div class="d-flex">
+          <div class="popup-body">
+            <div class="h1">Вход</div>
+            <span class="icon icon-close popup-close"></span>
+            <div class="entry">
+              <div class="entry-title">Логин</div>
+              <input type="password" class="entry-input" placeholder="Введите логин">
+            </div>
+            <div class="entry">
+              <div class="entry-title">Пароль</div>
+              <input type="password" class="entry-input" placeholder="Введите пароль">
+            </div>
+            <div class="popupEnter-link"><a href="#">Восстановить пароль</a></div>
+            <button class="btn btn-primary">Войти</button>
+            <div class="popupEnter-link__create"><span>Нет аккаунта?</span><a href="#">Создайте</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- popup end  -->
     </main>
     <!-- MAIN end -->
 

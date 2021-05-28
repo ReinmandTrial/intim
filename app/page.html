@@ -12,10 +12,8 @@
 
   <!-- WRAPPER start -->
   <div class="wrapper">
-
     <!-- HEADER start  -->
     <header class="header">
-      <!-- <div class="icon-test"><span class="icon icon-nice"></span> <i class="icon icon-nice"></i></div> -->
       <div class="container">
         <div class="burger">
           <span class="icon icon-burger"></span>
@@ -34,10 +32,10 @@
           <a class="nav-item" href="#">Отзывы</a>
           <a class="nav-item" href="#">Интим карта</a>
         </div>
-        <button class="btn btn-contour">Создать аккаунт</button>
-        <button class="btn btn-primary">Войти</button>
+        <button class="btn btn-contour btn-popupRegistration">Создать аккаунт</button>
+        <button class="btn btn-primary btn-popupEnter">Войти</button>
         <a class="icon icon-heart" href="#"></a>
-        <a class="icon icon-profile" href="#"></a>
+        <a class="icon icon-profile btn-burger__profile" href="#"></a>
         <div class="burger-second">
           <span class="icon icon-burger icon-second-burger"></span>
           <span class="icon icon-close"></span>
@@ -45,15 +43,349 @@
       </div>
     </header>
     <!-- HEADER end  -->
+    <!-- burgers-block  -->
+    <div class="burgers-notMain">
+      <!-- SIDEBAR start  -->
+      <div class="sidebar">
+        <div class="sidebar-nav__list">
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Ожидают звонка</a><span
+              class="counter">12</span></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">С реальным фото</a><span
+              class="counter">125</span></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Анкеты с видео</a><span
+              class="counter">54</span></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Новые анкеты</a></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">С большой грудью</a></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Экспресс услуги</a></div>
+          <div class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Страпон</a></div>
+        </div>
+        <div class="sidebar-filter__list">
+          <div class="sidebar-filter__item">
+            <div class="sidebar-filter__header js-btn">
+              <span class="sidebar-filter__title">
+                По Цене
+              </span>
+              <span class="icon icon-triangle-down"></span>
+            </div>
+            <div class="sidebar-filter__body">
+              <div class="sidebar-choice__list">
+                <a class="sidebar-choice__item" href="#">Дешевые</a>
+                <a class="sidebar-choice__item" href="#">1500-2000</a>
+                <a class="sidebar-choice__item" href="#">2000-3000</a>
+                <a class="sidebar-choice__item" href="#">3000-4000</a>
+                <a class="sidebar-choice__item" href="#">4000-5000</a>
+                <a class="sidebar-choice__item" href="#">Элитные</a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-filter__item">
+            <div class="sidebar-filter__header js-btn">
+              <span class="sidebar-filter__title">
+                По возрасту
+              </span>
+              <span class="icon icon-triangle-down"></span>
+            </div>
+            <div class="sidebar-filter__body">
+              <div class="sidebar-choice__list">
+                <a class="sidebar-choice__item" href="#">Молодые</a>
+                <a class="sidebar-choice__item" href="#">20-25</a>
+                <a class="sidebar-choice__item" href="#">25-30</a>
+                <a class="sidebar-choice__item" href="#">30-35</a>
+                <a class="sidebar-choice__item" href="#">35-40</a>
+                <a class="sidebar-choice__item" href="#">Элитные</a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-filter__item">
+            <div class="sidebar-filter__header js-btn">
+              <span class="sidebar-filter__title">
+                По национальности
+              </span>
+              <span class="icon icon-triangle-down"></span>
+            </div>
+            <div class="sidebar-filter__body">
+              <div class="sidebar-choice__list">
+                <a class="sidebar-choice__item" href="#">Русские</a>
+                <a class="sidebar-choice__item" href="#">Славянки</a>
+                <a class="sidebar-choice__item" href="#">Азиатки</a>
+                <a class="sidebar-choice__item" href="#">Негритянки</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SIDEBAR end  -->
+      <div class="mainBlock-filter">
+        <div class="mainBlock-filter__titleMobile">
+          <div class="mainBlock-filter__title h1">Фильтр и категории</div>
+          <a class="mainBlock-filter__subtitle" href="#">Фильтр и категории</a><span
+            class="mainBlock-filter__breadcrumbs"></span>
+        </div>
+        <div class="mainBlock-filter__btn">
+          <div class="btn btn-filter">
+            <span class="btn-filter__title"><span>Фильтр </span><span>анкет</span></span>
+            <span class="icon icon-triangle-down"></span>
+          </div>
+          <div class="btn btn-filter">
+            <span class="btn-filter__title">Предпочтения</span>
+            <span class="icon icon-triangle-down"></span></span>
+          </div>
+          <div class="btn btn-filter">
+            <span class="btn-filter__title">Категории</span>
+            <span class="icon icon-triangle-down"></span></span>
+          </div>
+        </div>
+        <div class="mainBlock-filter__body">
+          <div class="mainBlock-filter__item">
+            <div class="mainBlock-table">
+              <div class="mainBlock-table__row">
+                <div class="mainBlock-table__column">
+                  <span class="mainBlock-table__title">По цене</span>
+                  <div class="select">
+                    <div class="select-header">
+                      <span class="select-header__title">Выберите цену</span>
+                      <span class="icon icon-triangle-down"></span>
+                    </div>
+                    <div class="select-body">
+                      <div class="select-item">
+                        <span class="select-item__text">Дешевые</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">2000-3000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">3000-4000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">4000-5000</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="mainBlock-table__title">По цене</span>
+                  <div class="select">
+                    <div class="select-header">
+                      <span class="select-header__title">Выберите цену</span>
+                      <span class="icon icon-triangle-down"></span>
+                    </div>
+                    <div class="select-body">
+                      <div class="select-item">
+                        <span class="select-item__text">Дешевые</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">2000-3000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">3000-4000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">4000-5000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mainBlock-table__column">
+                  <span class="mainBlock-table__title">По цене</span>
+                  <div class="select">
+                    <div class="select-header">
+                      <span class="select-header__title">Выберите цену</span>
+                      <span class="icon icon-triangle-down"></span>
+                    </div>
+                    <div class="select-body">
+                      <div class="select-item">
+                        <span class="select-item__text">Дешевые</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">2000-3000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">3000-4000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">4000-5000</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="mainBlock-table__title">По цене</span>
+                  <div class="select">
+                    <div class="select-header">
+                      <span class="select-header__title">Выберите цену</span>
+                      <span class="icon icon-triangle-down"></span>
+                    </div>
+                    <div class="select-body">
+                      <div class="select-item">
+                        <span class="select-item__text">Дешевые</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">2000-3000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">3000-4000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">4000-5000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mainBlock-table__column">
+                  <span class="mainBlock-table__title">По цене</span>
+                  <div class="select">
+                    <div class="select-header">
+                      <span class="select-header__title">Выберите цену</span>
+                      <span class="icon icon-triangle-down"></span>
+                    </div>
+                    <div class="select-body">
+                      <div class="select-item">
+                        <span class="select-item__text">Дешевые</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">2000-3000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">3000-4000</span>
+                      </div>
+                      <div class="select-item">
+                        <span class="select-item__text">4000-5000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mainBlock-table__row mainBlock-table__row-mobile">
+                <div class="mainBlock-table__column">
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                </div>
+                <div class="mainBlock-table__column">
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
 
+                </div>
+                <div class="mainBlock-table__column">
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+                  <div class="check check--grid">
+                    <div class="check-Box"><span class="icon icon-chek"></span></div>
+                    <span class="check-label">Экспресс</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary">Применить</button>
+            <button class="btn btn-contour">Сбросить</button>
+            <button class="btn btn-contour btn-filter__back">Назад</button>
+          </div>
+          <div class="mainBlock-filter__item">
+            <div class="mainBlock-table">
+              <div class="mainBlock-table__row">
+                <div class="mainBlock-table__column mainBlock-table__column-mobile">
+                  <span class="mainBlock-table__title">Основное</span>
+                  <div class="mainBlock-table__list">
+                    <a class="mainBlock-table__item" href="#">Классический секс</a>
+                    <a class="mainBlock-table__item" href="#">Анальный секс</a>
+                    <a class="mainBlock-table__item" href="#">Групповой секс</a>
+                    <a class="mainBlock-table__item" href="#">Лесбийский секс</a>
+                    <a class="mainBlock-table__item" href="#">Минет в презервативе</a>
+                    <a class="mainBlock-table__item" href="#">Минет без презерватива</a>
+                    <a class="mainBlock-table__item" href="#">Минет глубокий</a>
+                    <a class="mainBlock-table__item" href="#">Минет в машине</a>
+                    <a class="mainBlock-table__item" href="#">Горловой минет (Иррумация)</a>
+                    <a class="mainBlock-table__item" href="#">Куннилингус</a>
+                  </div>
+                </div>
+                <div class="mainBlock-table__column mainBlock-table__column-mobile">
+                  <span class="mainBlock-table__title">Дополнительное</span>
+                  <div class="mainBlock-table__list">
+                    <a class="mainBlock-table__item" href="#">Поцелуи в губы</a>
+                    <a class="mainBlock-table__item" href="#">Окончание в рот</a>
+                    <a class="mainBlock-table__item" href="#">Окончание на грудь</a>
+                    <a class="mainBlock-table__item" href="#">Окончание на лицо</a>
+                    <a class="mainBlock-table__item" href="#">Стриптиз не профи</a>
+                    <a class="mainBlock-table__item" href="#">Стриптиз профи</a>
+                    <a class="mainBlock-table__item" href="#">Лесби-шоу легкое</a>
+                    <a class="mainBlock-table__item" href="#">Лесби-шоу откровенное</a>
+                    <a class="mainBlock-table__item" href="#">Услуги семейной паре</a>
+                    <a class="mainBlock-table__item" href="#">Эскорт</a>
+                  </div>
+                </div>
+                <div class="mainBlock-table__column mainBlock-table__column-mobile">
+                  <span class="mainBlock-table__title">Экстрим</span>
+                  <div class="mainBlock-table__list">
+                    <a class="mainBlock-table__item" href="#">Aнилингус делаю</a>
+                    <a class="mainBlock-table__item" href="#">Игрушки</a>
+                    <a class="mainBlock-table__item" href="#">Ролевые игры</a>
+                    <a class="mainBlock-table__item" href="#">Страпон</a>
+                    <a class="mainBlock-table__item" href="#">Фистинг анальный</a>
+                    <a class="mainBlock-table__item" href="#">Золотой дождь выдача</a>
+                    <a class="mainBlock-table__item" href="#">Золотой дождь прием</a>
+                    <a class="mainBlock-table__item" href="#">БДСМ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="mainBlock-table__title">Масаж</span>
+            <div class="mainBlock-table__list mainBlock-table__list--grid">
+              <a class="mainBlock-table__item" href="#">Расслабляющий</a>
+              <a class="mainBlock-table__item" href="#">Классический</a>
+              <a class="mainBlock-table__item" href="#">Эротический</a>
+              <a class="mainBlock-table__item" href="#">Профессиональный</a>
+              <a class="mainBlock-table__item" href="#">Аква-пенный</a>
+              <a class="mainBlock-table__item" href="#">Боди-массаж</a>
+              <a class="mainBlock-table__item" href="#">Ветка сакуры</a>
+              <a class="mainBlock-table__item" href="#">Гидромассаж</a>
+              <a class="mainBlock-table__item" href="#">Тайский</a>
+              <a class="mainBlock-table__item" href="#">Тантрический</a>
+              <a class="mainBlock-table__item" href="#">Точечный</a>
+              <a class="mainBlock-table__item" href="#">Лингама</a>
+              <a class="mainBlock-table__item" href="#">Урологический</a>
+            </div>
+            <button class="btn btn-contour btn-filter__back">Назад</button>
+          </div>
+          <div class="mainBlock-filter__item">
+            <button class="btn btn-contour btn-filter__back">Назад</button>
+          </div>
+        </div>
+      </div>
+      <div class="burger__profile">
+        <a href="" class="burger__profile-link">Мои анкеты</a>
+        <a href="" class="burger__profile-link">Пополнить баланс</a>
+        <a href="" class="burger__profile-link">Настройки профиля</a>
+        <a href="" class="burger__profile-link">FAQ</a>
+        <a href="" class="burger__profile-link">Выйти</a>
+      </div>
+    </div>
+    <!-- burgers-block end  -->
     <!-- MAIN start  -->
     <main class="main">
 
-      <!-- SIDEBAR start  -->
-      <sidebar class="sidebar">
-
-      </sidebar>
-      <!-- SIDEBAR end  -->
+     
 
 
       <!-- CONTENT start  -->
@@ -69,31 +401,31 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-logo">
-            <a href=""><img src="images/Footer-logo.png" alt="Логотип"></a>
-          </div>
-          <div class="footer-descr">
-            <div class="footer-list">
-              <a class="footer-list__item" href="#">Инди</a>
-              <a class="footer-list__item" href="#">Масажистки</a>
-              <a class="footer-list__item" href="#">Салоны</a>
-              <a class="footer-list__item" href="#">Трансы</a>
-              <a class="footer-list__item" href="#">Парни</a>
-              <a class="footer-list__item" href="#">Интим карта</a>
-              <a class="footer-list__item" href="#">Отзывы</a>
-              <a class="footer-list__item" href="#">Форум</a>
-              <a class="footer-list__item" href="#">Проверенные</a>
-              <a class="footer-list__item" href="#">С видео</a>
-              <a class="footer-list__item" href="#">Экспресс</a>
-              <a class="footer-list__item" href="#">Новые</a>
-              <a class="footer-list__item" href="#">Интим карты</a>
-              <a class="footer-list__item" href="#">FAQ</a>
+            <div class="footer-logo">
+              <a href=""><img src="images/Footer-logo.png" alt="Логотип"></a>
             </div>
-            <a class="footer-accord" href="#">Пользовательское соглашение</a>
-            <div class="footer__copyright">
-              <span class="footer__copyright-info">Все права защищены © 2021</span>
+            <div class="footer-descr">
+              <div class="footer-list">
+                  <a class="footer-list__item" href="#">Инди</a>
+                  <a class="footer-list__item" href="#">Масажистки</a>
+                  <a class="footer-list__item" href="#">Салоны</a>
+                  <a class="footer-list__item" href="#">Трансы</a>
+                  <a class="footer-list__item" href="#">Парни</a>
+                  <a class="footer-list__item" href="#">Интим карта</a>
+                  <a class="footer-list__item" href="#">Отзывы</a>
+                  <a class="footer-list__item" href="#">Форум</a>
+                  <a class="footer-list__item" href="#">Проверенные</a>
+                  <a class="footer-list__item" href="#">С видео</a>
+                  <a class="footer-list__item" href="#">Экспресс</a>
+                  <a class="footer-list__item" href="#">Новые</a>
+                  <a class="footer-list__item" href="#">Интим карты</a>
+                  <a class="footer-list__item" href="#">FAQ</a>
+              </div>
+              <a class="footer-accord" href="#">Пользовательское соглашение</a>
+              <div class="footer__copyright">
+                  <span class="footer__copyright-info">Все права защищены © 2021</span>
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </footer>

@@ -5,7 +5,7 @@ $(window).on("load resize",(function(){
       $('.sidebar').append($('.nav')); 
       $('.sidebar').find('.sidebar-filter__header').addClass('mobile');
       $('.mainBlock-filter__btn').find('.btn-filter').addClass('mobile');
-      $('.mainBlock-table__column').find('.check').unwrap();
+      $('.mainBlock-table__column').find('.check--grid').unwrap();
       // if (/iPhone|iPad|/i.test(navigator.userAgent)) {
       //    // alert("Вы используете мобильное устройство (телефон или планшет).")
       //    $('.sidebar').css('padding-bottom','100px');
@@ -28,12 +28,21 @@ $('.burger').on('click',function(){
    $(this).toggleClass('open');
    $('.burger-second').removeClass('open');
    $('.mainBlock-filter').removeClass('open');
+   $('.burger__profile').removeClass('open');
 })
 $('.burger-second').on('click',function(){
    $('.mainBlock-filter').toggleClass('open');
    $(this).toggleClass('open');
    $('.burger').removeClass('open');
    $('.sidebar').removeClass('open');
+   $('.burger__profile').removeClass('open');
+})
+$('.btn-burger__profile').on('click',function(){
+   $('.burger__profile').toggleClass('open');
+   $('.burger').removeClass('open');
+   $('.sidebar').removeClass('open');
+   $('.burger-second').removeClass('open');
+   $('.mainBlock-filter').removeClass('open');
 })
 //end burger
 $('.js-btn').on('click',function(){
@@ -222,14 +231,17 @@ $('.popup-link, .popup-close').on('click',function(){
 //close popup end
 
 
-$('.faq__item').on('click',function(){
+$('.faq__header').on('click',function(){
    var items = $(this).closest('.faq__list').find('.faq__item');
    if($(this).hasClass('active')){
       $(this).removeClass('active');
+      $(this).next().hide("slow");
    }else{
       $(items).each(function(){
          $(this).removeClass('active');
+         $(this).find('.faq__body').hide("slow");
       })
       $(this).addClass('active');
+      $(this).next().show("slow");
    }
 })

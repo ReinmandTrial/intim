@@ -96,8 +96,8 @@
             background: #F0EEEB;
         }
         &.active {
-            .faq__body {
-                display: block;
+            .icon{
+                transform: rotate(180deg);
             }
         }
     }

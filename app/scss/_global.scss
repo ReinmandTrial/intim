@@ -8,6 +8,7 @@ body {
   font-size: calc(14px + (15 - 14) * ((100vw - 360px) / (1920 - 360)));
   line-height: calc(18px + (20 - 18) * ((100vw - 360px) / (1920 - 360)));
   overflow-x: hidden;
+  background: #FCFAF7;
 }
 .wrapper {
 	display: flex;
@@ -48,6 +49,9 @@ body {
 }
 .d-flex{
 	display: flex !important;
+}
+.burgers-notMain{
+	display: none;
 }
 .select{
 	width: 100%;
@@ -396,3 +400,31 @@ body {
 	}
 }
 //Ввод данных конец 
+.burger{
+	&__profile{
+		position: fixed;
+		top: 74px;
+		left: -400px;
+		z-index: 999;
+		width: 360px;
+		height: 100vh;
+		background: $white;
+		padding: 24px 16px;
+		font-size: 18px;
+		line-height: 24px;
+		transition: all .5s;
+		&.open{
+			left: 0;
+		}
+	}
+	&__profile-link{
+		margin-bottom: 14px;
+		display: block;
+		&:hover{
+			color: $mainColor;
+		}
+		&:focus{
+			color: $mainColor;
+		}
+	}
+}

@@ -69,6 +69,9 @@
          order: 2;
       }
    }
+   .burgers-notMain{
+      display: block;
+   }
    .sidebar{
       display: flex;
       flex-wrap: wrap;
@@ -269,6 +272,9 @@
    .errorBlock-content {
       padding: 123px 62px;
    }
+   .review-card__title-description{
+      height: 36px;
+   }
 }
 // MAX-WIDTH 991.98PX breakpoints END
 
@@ -378,6 +384,22 @@
          width: 100%;
       }
    }
-
+   .review{
+      &-card{
+         position: relative;
+         padding: 4px;
+      }
+      &-card__title{
+         margin-top: 10px;
+      }
+      &-card__signature{
+         position: absolute;
+         display: inline-block;
+         top: 16px;
+         right: 14px;
+         z-index: 2;
+      } 
+   }
+  
 }
 // MAX-WIDTH 576.98PX breakpoints END 
