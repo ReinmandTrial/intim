@@ -878,18 +878,53 @@
 }
 
 .employee{
-   padding: 48px 0 64px;
+   padding: 64px 0;
    .icon-star-full{
       color: $yellow;
       fill: $yellow;
    }
-   margin-top: 48px;
+   .breadcrumbs{
+      margin-bottom: 48px;
+   }
    &-information{
       display: flex;
       justify-content: space-between;
+      margin-bottom: 48px;
    }
    &-files{
-      width: 258px;
+      width: 470px;
+   }
+   &-files__photo{
+      display: flex;
+      margin-bottom: 24px;
+   }
+   &-files__video{
+      width: 470px;
+      height: 258px;
+      border-radius: 12px;
+      overflow: hidden;
+      video{
+         width: 100%;
+         height: 100%;
+      }
+   }
+   &-files__img{
+      width: 368px;
+      height: 460px;
+      margin-left: auto;
+      display: flex;
+      justify-content: center;
+      img{
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+   &-files__images{
+      height: 100%;
+      width: max-content;
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
    }
    &-description{
       width: 674px;
@@ -1064,6 +1099,12 @@
       .icon-nice{
          color: $green1;
       }
+      .icon-money{
+         color: $red;
+      }
+      .icon-normal{
+         color: $orange;
+      }
       .icon{
          margin-right: 5px;   
       }
@@ -1146,7 +1187,7 @@
       height: 164px;
       border: none;
       &::placeholder{
-         color: $border;
+         color: $input;
       }
    }
 }
@@ -1158,7 +1199,11 @@
    display: flex;
    justify-content: space-between;
    width: 378px;
-
+   .card-score__stars{
+      .icon{
+         margin-left: 3px;
+      }
+   }
    &-photo{
    }
    &__img{
@@ -1231,8 +1276,22 @@
    }
    &__stars{
       margin-left: 1px;
+      display: flex;
       .icon{
-         margin-left: 4px;
+      }
+      .icon-star-js{
+         cursor: pointer;
+         padding: 0 2px;
+         &.js-hover{
+            .icon{
+               color: $red;
+            }
+         }
+         &.active{
+            .icon{
+               color: $red;
+            }
+         }
       }
    }
    &__text{
@@ -1247,4 +1306,44 @@
 input,
 .entry-input {
    color: $textColor;
+}
+.slick{
+   height: 460px;
+   width: 90px;
+   overflow: hidden;
+   position: relative;
+   border-radius: 12px;
+   &-item__img{
+      cursor: pointer;
+      width: 90px;
+      height: 131px;
+      border-radius: 12px;
+      overflow: hidden;
+      img{
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+   &-prev{
+      display: none !important;
+   }
+   &-next{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      cursor: pointer;
+      border-radius: 12px;
+      height: 47px;
+      background: $textColor;
+      width: 90px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      color: $white;
+      opacity: .9;
+      padding-bottom: 5px;
+      .icon{
+         font-size: 10px;
+      }
+   }
 }

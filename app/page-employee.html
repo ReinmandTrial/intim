@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
 </head>
 
 <body>
@@ -390,13 +389,70 @@
       <div class="content">
         <div class="employee">
           <div class="container">
+            <!-- breadcrumbs start -->
+            <div class="breadcrumbs">
+              <div class="breadcrumbs__item mini-text">
+                <a class="breadcrumbs__link" href="#">Инди</a>
+                <span>/</span>
+                <a class="breadcrumbs__link" href="#">Елизавета</a>
+              </div>
+            </div>
             <div class="employee-information">
               <div class="employee-files">
                 <div class="employee-files__photo">
-
+                  <div class="slick">
+                    <div class="slick-item">
+                      <div class="slick-item__img">
+                        <img src="images/slider/Photo.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slick-item">
+                      <div class="slick-item__img">
+                        <img src="images/slider/Photo2.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slick-item">
+                      <div class="slick-item__img">
+                        <img src="images/slider/слайдер5.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="slick-item">
+                      <div class="slick-item__img">
+                        <img src="images/slider/Photo4.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slick-item">
+                      <div class="slick-item__img">
+                        <img src="images/slider/Photo.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slick-item">
+                      <div class="slick-item__img">
+                        <img src="images/slider/Photo2.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slick-item">
+                      <div class="slick-item__img">
+                        <img src="images/slider/Photo3.png" alt="">
+                      </div>
+                    </div>
+                    <div class="slick-item">
+                      <div class="slick-item__img">
+                        <img src="images/slider/Photo4.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employee-files__img">
+                    <div class="employee-files__images">
+                      <span class="cardEmployee-rating">100%</span>
+                      <img src="images/slider/Photo.png" alt="">
+                    </div>
+                  </div>
                 </div>
-                <div class="employee-file__video">
-
+                <div class="employee-files__video">
+                  <!-- <video src="https://www.youtube.com/watch?v=xvkCqmkI8nE" controls></video> -->
+                  <video src="images/video.mp4" controls></video>
+                  <!-- <img src="images/Preview video.png" alt=""> -->
                 </div>
               </div>
               <div class="employee-description">
@@ -517,11 +573,11 @@
                   <span class="price-hint__text">— включено в стоимость</span>
                 </div>
                 <div class="price-hint__item">
-                  <span class="price-hint__icon icon icon-nice"></span>
+                  <span class="price-hint__icon icon icon-normal"></span>
                   <span class="price-hint__text">— по симпатии</span>
                 </div>
                 <div class="price-hint__item">
-                  <span class="price-hint__icon icon icon-nice"></span>
+                  <span class="price-hint__icon icon icon-money"></span>
                   <span class="price-hint__text">— за дополнительную плату</span>
                 </div>
                 <div class="price-hint__item">
@@ -540,7 +596,7 @@
                         <span class="price-cena"></span>
                       </div>
                       <div class="price-table__item">
-                        <span class="icon icon-nice"></span>
+                        <span class="icon icon-money"></span>
                         <span>Лесбийский секс</span>
                         <span class="price-cena">(+3000)</span>
                       </div>
@@ -561,12 +617,12 @@
                           <spanv>
                       </div>
                       <div class="price-table__item">
-                        <span class="icon icon-nice"></span>
+                        <span class="icon icon-money"></span>
                         <span>Горловой минет (Иррумация)</span>
                         <span class="price-cena">(+700)</span>
                       </div>
                       <div class="price-table__item">
-                        <span class="icon icon-nice"></span>
+                        <span class="icon icon-money"></span>
                         <span>Куннилингус</span>
                         <span class="price-cena">(+1000)</span>
                       </div>
@@ -599,12 +655,12 @@
                         <span class="price-cena"></span>
                       </div>
                       <div class="price-table__item">
-                        <span class="icon icon-nice"></span>
+                        <span class="icon icon-money"></span>
                         <span>Стриптиз профи</span>
                         <span class="price-cena">(+4000)</span>
                       </div>
                       <div class="price-table__item">
-                        <span class="icon icon-nice"></span>
+                        <span class="icon icon-money"></span>
                         <span>Услуги семейной паре</span>
                         <span class="price-cena">(+4000)</span>
                       </div>
@@ -631,7 +687,7 @@
                       <div class="column-double__item">
                         <div class="price-table__title h3">Экстрим</div>
                         <div class="price-table__item">
-                          <span class="icon icon-nice"></span>
+                          <span class="icon icon-money"></span>
                           <span>Ролевые игры</span>
                           <span class="price-cena">(+2000)</span>
                         </div>
@@ -766,31 +822,61 @@
                   <div class="card-score__item">
                     <span>Внешность</span>
                     <div class="card-score__stars">
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-score__item">
                     <span>Апартаменты</span>
                     <div class="card-score__stars">
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
                     </div>
                   </div>
                   <div class="card-score__item">
                     <span>Качество услуг</span>
                     <div class="card-score__stars">
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
-                      <span class="icon icon-star-full"></span>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="icon-star-js">
+                        <span class="icon icon-star-full"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -824,7 +910,7 @@
             </div>
             <div class="entry">
               <div class="entry-title">Логин</div>
-              <input type="password" class="entry-input" placeholder="Введите логин">
+              <input type="text" class="entry-input" placeholder="Введите логин">
             </div>
             <div class="entry">
               <div class="entry-title">Пароль</div>
@@ -851,7 +937,7 @@
             <span class="icon icon-close popup-close"></span>
             <div class="entry">
               <div class="entry-title">Логин</div>
-              <input type="password" class="entry-input" placeholder="Введите логин">
+              <input type="text" class="entry-input" placeholder="Введите логин">
             </div>
             <div class="entry">
               <div class="entry-title">Пароль</div>
@@ -908,7 +994,6 @@
 
   <!-- SCRIPTS start  -->
   <script src="js/main.min.js"></script>
-  <script src="../node_modules/slick-carousel/slick/slick.min.js"></script>
 
 
 </body>

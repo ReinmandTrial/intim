@@ -314,6 +314,11 @@
    }
    // CREATE
 
+   .employee{
+      &-information{
+         display: block;
+      }
+   }
 }
 // MAX-WIDTH 991.98PX breakpoints END
 
