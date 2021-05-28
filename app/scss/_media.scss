@@ -275,6 +275,11 @@
    .review-card__title-description{
       height: 36px;
    }
+   .employee{
+      &-information{
+         display: block;
+      }
+   }
 }
 // MAX-WIDTH 991.98PX breakpoints END
 

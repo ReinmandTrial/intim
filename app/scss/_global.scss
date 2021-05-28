@@ -10,6 +10,9 @@ body {
   overflow-x: hidden;
   background: #FCFAF7;
 }
+textarea{
+	resize: none;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
