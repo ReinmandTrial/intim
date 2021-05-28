@@ -290,9 +290,15 @@ $('.slick').slick({
 $(function(){
    var count = 0;
    $('.icon-star-js').mouseover(function(){
+      count = 0;
       var i = 0;
       var thisParent = $(this).closest('.card-score__stars');
       var thisItem = thisParent.find('.icon-star-js');
+      $(thisItem).each(function(){
+         if($(this).hasClass('active')){
+            count++;
+         }
+      })
       $(thisItem).each(function(){
          $(this).removeClass('active');
       })
@@ -341,7 +347,6 @@ $(function(){
       $(thisItem).each(function(index){
          if(index < i+1){
             $(this).addClass('active');
-            count++;
          }
       })
       
