@@ -45,6 +45,9 @@
          .icon-close{
             display: block;
          }
+         .icon-burger-second{
+            display: none !important;
+         }
       }
    }
 }
@@ -1306,7 +1309,10 @@
       color: #999896;
    }
 }
-
+input,
+.entry-input {
+   color: $textColor;
+}
 .slick{
    height: 460px;
    width: 90px;

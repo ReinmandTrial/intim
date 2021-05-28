@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tcpn68');
-  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tcpn68#iefix') format('embedded-opentype'),
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?tcpn68') format('truetype'),
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?tcpn68') format('woff'),
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?tcpn68##{$icomoon-font-family}') format('svg');
+  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ruphex');
+  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ruphex#iefix') format('embedded-opentype'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ruphex') format('truetype'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ruphex') format('woff'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ruphex##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,17 +27,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-burger-second .path1 {
+.icon-burger-second {
   &:before {
-    content: $icon-burger-second-path1;  
-    color: rgb(39, 39, 39);
-  }
-}
-.icon-burger-second .path2 {
-  &:before {
-    content: $icon-burger-second-path2;  
-    margin-left: -1.23828125em;  
-    color: rgb(196, 178, 138);
+    content: $icon-burger-second; 
   }
 }
 .icon-close {
@@ -128,6 +120,12 @@
 .icon-triangle-down {
   &:before {
     content: $icon-triangle-down; 
+  }
+}
+.icon-none {
+  &:before {
+    content: $icon-none;     
+    color: #999896;
   }
 }
 

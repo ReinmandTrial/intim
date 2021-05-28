@@ -26,13 +26,19 @@ textarea{
 .footer {
 	flex: 0 0 auto;
 }
+input {
+	appearance: none;
+}
+.icon-burger-second {
+	font-size: 40px !important;
+}
 
 .container{
   max-width: 1214px;
   margin: 0 auto;
   padding: 0 15px;
   &-create{
-	  padding: 64px 0;
+	  padding: 64px 15px;
   }
 }
 
