@@ -923,6 +923,7 @@
       }
    }
    &-files__images{
+      cursor: pointer;
       height: 100%;
       width: max-content;
       position: relative;
@@ -1351,5 +1352,46 @@ input,
       .icon{
          font-size: 10px;
       }
+   }
+}
+
+.popupFancyBox{
+
+   .popup-close{
+      cursor: pointer;
+      position: absolute;
+      font-size: 23px;
+      top: -12px;
+      right: -12px;
+      z-index: 999;
+      border-radius: 50%;
+      background: #000;
+   }
+   .icon-none{
+      color: $white;
+   }
+   .popup-body{
+      width: fit-content;
+      height: unset;
+      max-width: 1100px;
+      height: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   &-img{
+      position: relative;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      padding: 10px;
+      background: $white;
+   }
+   img{
+      height: inherit;
+      width: inherit;
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
    }
 }
