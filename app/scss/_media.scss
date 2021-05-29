@@ -45,6 +45,50 @@
    .btn-back {
       display: block;
    }
+   .employee{
+      &-files{
+         width: 370px;
+         margin-right: 20px;
+      }
+      &-files__photo{
+         flex-wrap: wrap;
+      }
+      &-files__video{
+         width: 100%;
+         height: auto;
+      }
+      .slick{
+         order: 2;
+         width: 100%;
+         height: max-content;
+         margin-top: 8px;
+      }
+      &-files__img{
+         width: 100%;
+      }
+      .slick-item__img{
+         margin: 0 auto;
+      }
+      &-table__item{
+         width: 100%;
+
+      }
+      &-table__row{
+         display: block;
+      }
+      &-table__column{
+         padding: 0;
+         width: 100%;
+         &:not(:last-child){
+            margin-bottom: 8px;
+         }
+      }
+      &-table__column-solo{
+         .employee-column__item{
+            width: calc(100% / 3);
+         }
+      }
+   }
 } 
 // MAX-WIDTH 1199.98PX breakpoints END
 
@@ -53,7 +97,7 @@
    .popupFancyBox{
       .popup-body{
          max-width: 90%;
-         max-height: 90%;
+         max-height: 80%;
       }
    }
 }
@@ -64,7 +108,11 @@
    body{
       padding-top: 74px;
    }
-
+   .employee{
+      &-files{
+         margin: 0 auto;
+      }
+   }
    .header{
       position: fixed;
       top: 0;
@@ -707,6 +755,14 @@
          }
       }
    }
-  
+   .employee{
+      &-files{
+         width: 328px;
+      }
+      .slick-item__img{
+         width: 76px;
+         height: 111px;
+      }
+   }
 }
 // MAX-WIDTH 576.98PX breakpoints END 

@@ -4,13 +4,16 @@ $(window).on("load resize",(function(){
       $('.sidebar').find('.sidebar-filter__header').addClass('mobile');
       $('.mainBlock-filter__btn').find('.btn-filter').addClass('mobile');
       $('.mainBlock-table__column').find('.check--grid').unwrap();
-      //employee page
-      $('.employee-description').append($('.employee-files__video'));
-      //employee page end
    }else{ 
       $('.header>.container').append($('.nav'));
       $('.sidebar').find('.sidebar-filter__header').removeClass('mobile');
       $('.mainBlock-filter__btn').find('.btn-filter').removeClass('mobile');
+   }
+   if($(window).width()<"992"){
+      //employee page
+      $('.employee-description').append($('.employee-files__video'));
+      //employee page end
+   }else{
       //employee page
       $('.employee-files').append($('.employee-files__video'));
       //employee page end
@@ -277,16 +280,25 @@ $('.faq__header').on('click',function(){
 })
 
 //slider
-$('.slick').slick({
-   infinite: true,
-   slidesToShow:4,
-   slidesToScroll:1,
-   arrows:true,
-   dots:false,
-   vertical:true,
-   verticalSwiping: false
-
- });
+   $('.slick').slick({
+      infinite: true,
+      slidesToShow:4,
+      slidesToScroll:1,
+      arrows:true,
+      dots:false,
+      vertical:true,
+      verticalSwiping: false,
+      responsive:[
+         {
+            breakpoint: 1200,
+            settings:{
+               vertical:false,
+               arrows:false,
+            }
+         }
+      ]
+   
+    });
  $('.slick').on('wheel', (function(e) {
    e.preventDefault();
  
