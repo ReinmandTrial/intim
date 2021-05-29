@@ -48,6 +48,16 @@
 } 
 // MAX-WIDTH 1199.98PX breakpoints END
 
+// MAX-WIDTH 1100px
+@media (max-width: 1100px){
+   .popupFancyBox{
+      .popup-body{
+         max-width: 90%;
+         max-height: 90%;
+      }
+   }
+}
+// MAX-WIDTH 1100px end
 
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
