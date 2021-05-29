@@ -906,6 +906,9 @@
       height: 258px;
       border-radius: 12px;
       overflow: hidden;
+      .h2 {
+         display: none;
+      }
       video{
          width: 100%;
          height: 100%;
@@ -1187,7 +1190,6 @@
       margin: 12px 0;
       background: $border;
       border-radius: 12px;
-      color: $input;
       padding: 10px 14px;
       width: 100%;
       height: 164px;
@@ -1310,7 +1312,8 @@
    }
 }
 input,
-.entry-input {
+.entry-input,
+textarea {
    color: $textColor;
 }
 .slick{
@@ -1352,4 +1355,12 @@ input,
          font-size: 10px;
       }
    }
+}
+.block-back {
+   justify-content: center;
+   display: none;
+}
+.btn-back {
+   color: $mainColor;
+   display: none;
 }

@@ -23,6 +23,28 @@
          width: calc(328px + (423 - 328) * ((100vw - 360px) / (1199 - 360)));
       }
    }
+   .employee {
+      padding: 24px 0px 40px;
+      .breadcrumbs {
+         margin-top: 15px;
+         margin-bottom: 17px;
+      }
+   }
+   .review {
+      &-list {
+         display: block;
+         width: 50%;
+      }
+      &-give {
+         width: 50%;
+      }
+   }
+   .block-back {
+      display: flex;
+   }
+   .btn-back {
+      display: block;
+   }
 } 
 // MAX-WIDTH 1199.98PX breakpoints END
 
@@ -317,7 +339,37 @@
    .employee{
       &-information{
          display: block;
+         margin-bottom: 20px;
       }
+      &-description {
+         width: 100%;
+      }
+      &-table__column-solo {
+         width: 100%;
+         .employee-column__item {
+            width: 33%;
+         }
+      }
+      &-files__video {
+         width: 100%;
+         .h2 {
+            display: block;
+            margin-bottom: 10px;
+         }
+         video {
+            width: 100%;
+            background: black;
+         }
+      }
+   }
+   .price-hint {
+      display: block;
+      &__item:not(:last-child) {
+         margin-bottom: 8px;
+      }
+   }
+   .price-employee {
+      margin-bottom: 20px;
    }
 }
 // MAX-WIDTH 991.98PX breakpoints END
@@ -490,6 +542,85 @@
    }
    .downloadVideo-input {
       width: 100%;
+   }
+   .employee {
+      &-connect {
+         padding: 14px;
+      }
+      &-icon,
+      &-warning,
+      &-text,
+      &-table__row:not(:last-child) {
+         margin-bottom: 20px;
+      }
+      &-table__row {
+         display: block;
+      }
+      &-table__column {
+         width: 100%;
+         padding: 0px;
+         &::after {
+            display: none;
+         }
+      }
+      &-table__column-double {
+         .column-double__item:not(:last-child) {
+            padding-bottom: 0px;
+            &::after {
+               display: none;
+            }
+         }
+      }
+      &-table__item {
+         justify-content: unset;
+      }
+      &-data__title {
+         width: 160px;
+         display: block;
+      }
+      &-data__value {
+         max-width: unset;
+         text-align: unset;
+      }
+   }
+   .review {
+      &-employee {
+         display: block;
+      }
+      &-give {
+         width: 100%;
+      }
+      &-list {
+         width: 100%;
+      }
+      &-item:nth-child(2n) {
+         margin-left: unset;
+      }
+      &-table__column::after {
+         display: none;
+      }
+   }
+   .card-score {
+      padding: unset;
+      background: none;
+      width: 100%;
+      margin-bottom: 20px;
+      &__content {
+         width: 100%;
+      }
+      &__photo {
+         margin-right: 10px;
+      }
+   }
+   .block-back {
+      margin-top: 20px;
+   }
+   .price-body {
+      background: unset;
+      padding: unset;
+   }
+   .price-table__title {
+      margin-top: 20px;
    }
 }
 // MAX-WIDTH 767.98PX breakpoints END
