@@ -40,11 +40,27 @@ function images() {
 
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.js',
-    'node_modules/slick-carousel/slick/slick.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
+    .pipe(uglify())
+    .pipe(dest('app/js'))
+    .pipe(browserSync.stream())
+}
+function scriptSlick() {
+  return src([
+    'node_modules/slick-carousel/slick/slick.js'
+  ])
+    .pipe(concat('slick.min.js'))
+    .pipe(uglify())
+    .pipe(dest('app/js'))
+    .pipe(browserSync.stream())
+}
+function scriptJquery() {
+  return src([
+    'node_modules/jquery/dist/jquery.js'
+  ])
+    .pipe(concat('jquery.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))
     .pipe(browserSync.stream())
@@ -85,9 +101,10 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
-
+exports.scriptSlick = scriptSlick;
+exports.scriptJquery = scriptJquery;
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles ,scripts ,browsersync, watching);
+exports.default = parallel(styles ,scriptJquery, scripts,scriptSlick ,browsersync, watching);
 
 
