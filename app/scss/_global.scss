@@ -189,6 +189,7 @@ input {
 	height: 225px;
 	display: flex;
 	&-photo{
+		cursor: pointer;
 		position: relative;
 		width: 166px;
 		height: 225px;
@@ -250,6 +251,9 @@ input {
 		font-weight: 500;
 		display: flex;
 		justify-content: space-between;
+		span{
+			cursor: pointer;
+		}
 		.icon{
 			cursor: pointer;
 			&.likes{

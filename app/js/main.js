@@ -279,6 +279,12 @@ $('.faq__header').on('click',function(){
    }
 })
 
+//кликабельные блоки 
+$('.cardEmployee-title span, .cardEmployee-photo').on('click',function(){
+   location.href='https://yandex.ua/';
+   // alert();
+})
+//кликабельные блоки конец
 //slider
    $('.slick').slick({
       infinite: true,
